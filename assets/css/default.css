@@ -1,0 +1,43 @@
+
+.projects,
+.categories,
+.versions {
+    list-style-type: none;
+    margin: 0px;
+}
+
+.project {
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: #ccc 4px 4px 4px;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project .description {
+    margin-bottom: 15px;
+}
+
+.categories {
+    float: right;
+}
+
+.categories li,
+.versions li {
+    display: inline;
+}
+
+.categories li:after,
+.versions li:after {
+    content: ":";
+}
+
+.categories li:last-child:after,
+.versions li:last-child:after {
+    content: "";
+}
+
+
