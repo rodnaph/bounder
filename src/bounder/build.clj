@@ -13,11 +13,13 @@
 (defn- sh-str [cmd]
   (apply sh (s/split cmd #"\s+")))
 
-(defn- api-docs* [project]
+(defn- api-docs* [project local-path]
   (let [tmp-dir (fs/temp-dir (:name project))
         tmp-path (.getAbsolutePath tmp-dir)
         doc-path (format "%s/doc" tmp-path)]
-    (git/git-clone-full (:git-url project) tmp-path)
+    (let [result (git/git-clone-full (:git-url project) tmp-path)]
+      (git/git-checkout (:repo result)
+                        (:version project)))
     (with-sh-dir tmp-path
       (sh-str "lein doc"))
     (fs/copy-dir doc-path local-path)))

@@ -7,7 +7,7 @@
 (defn- build-projects []
   (doseq [project data/projects]
     (doseq [version (:versions project)]
-      (println (format "Checking %s v%s"
+      (println (format "Checking %s %s"
                        (:name project)
                        version))
       (build/api-docs
