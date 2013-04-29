@@ -12,7 +12,7 @@
 (defn- category-to-li [category]
   (fn [node]
     (at node
-        [:a] (content (name category)))))
+        [:.] (content (name category)))))
 
 (defn- version-to-li [project version]
   (fn [node]
@@ -24,7 +24,9 @@
 (defn- project-to-li [project]
   (fn [node]
     (at node
-        [:h3 :a] (content (:name project))
+        [:h3 :a] (do-> (content (:name project))
+                       (set-attr :href (:url project)))
+        [:.description] (content (:description project))
         [:.versions :li] (clone-for [version (:versions project)]
                                     (version-to-li project version))
         [:.categories :li] (clone-for [category (:categories project)]

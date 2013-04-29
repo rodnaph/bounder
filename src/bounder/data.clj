@@ -5,11 +5,15 @@
 (defn- git-url [project-name]
   (format "https://github.com/%s.git" project-name))
 
+(defn- github-url [project-name]
+  (format "https://github.com/%s" project-name))
+
 (defn- github
   ([project-name] (github project-name {}))
   ([project-name options]
     (let [[user repo] (s/split project-name #"/")]
       (merge {:name repo
+              :url (github-url project-name)
               :git-url (git-url project-name)}
              options))))
 
