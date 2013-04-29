@@ -17,8 +17,26 @@
 ;; ------
 
 (def projects [
+
   (github "rodnaph/decker"
-          {:categories [:tools :database]
+          {:categories [:database]
            :versions ["0.0.2"]})
+
+  (github "clj-jgit/clj-jgit"
+          {:categories [:tools :git]
+           :versions ["v0.0.3"]})
+
+  (github "Raynes/fs"
+          {:categories [:filesystem]
+           :versions ["1.3.2"]})
+
+  (github "weavejester/codox"
+          {:categories [:documentation]
+           :versions ["0.6.4" "0.6.3"]})
+
+  (github "cgrand/enlive"
+          {:categories [:templating]
+           :versions ["master"]})
+
 ])
 
