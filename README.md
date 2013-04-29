@@ -2,7 +2,9 @@
 # Bounder
 
 A repository testing some ideas for automatically generating API documentation
-for Clojure and ClojureScript projects.
+for Clojure and ClojureScript projects.  You can browse the site here:
+
+http://rodnaph.github.io/bounder/
 
 ## The Problem
 
