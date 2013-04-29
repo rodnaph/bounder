@@ -12,7 +12,7 @@
 (defn- category-to-li [category]
   (fn [node]
     (at node
-        [:.] (content (name category)))))
+        [:*] (content (name category)))))
 
 (defn- version-to-li [project version]
   (fn [node]

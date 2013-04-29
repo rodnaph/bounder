@@ -36,7 +36,7 @@
 
   (github "weavejester/codox"
           {:categories [:documentation]
-           :versions ["0.6.4" "0.6.3"]})
+           :versions ["0.6.4"]})
 
   (github "cgrand/enlive"
           {:categories [:templating]
