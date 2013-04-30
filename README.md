@@ -22,7 +22,8 @@ are built and committed to Git.
 
 # Disclaimer
 
-This might be rubbish.
+This might be rubbish, and at the moment only supports Clojure projects.  I
+hope to make it support ClojureScript too soon.
 
 # Usage
 
