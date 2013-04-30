@@ -32300,59 +32300,62 @@ bounder.html.version_url = function version_url(project, version) {
   return cljs.core.format.call(null, "projects/%s/%s/index.html", (new cljs.core.Keyword("\ufdd0'name")).call(null, project), version)
 };
 if(cljs.core.deref.call(null, enfocus.core.tpl_cache).call(null, "resources/views/index.html") == null) {
-  var vec__3435_3440 = enfocus.core.replace_ids.call(null, '<!DOCTYPE html>\n\n<html>\n    <head>\n        <title>Bounder - Clojure Docs</title>\n        <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css" />\n        <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />\n    </head>\n    <body>\n\n        <div class="navbar navbar-inverse">\n            <div class="navbar-inner">\n                <span class="brand">\n                    Clojure/Script Documentation\n                </span>\n            </div>\n        </div>\n\n        <div class="container">\n\n            <div class="row">\n\n                <div class="span8">\n\n                    <div class="search">\n                        <input type="text"\n                               placeholder="Filter by name/category" />\n                    </div>\n\n                    <h2>Projects</h2>\n\n                    <ul class="projects">\n                        <li class="project">\n\n                            <h3>\n                                <a href="#">Project Name</a>\n                            </h3>\n\n                            <div class="description">\n                                Here is the description of the project. It could be quite long,\n                                but I don\'t know just how long.  Better just allow this to\n                                stretch vertically I suppose...\n                            </div>\n\n                            <ul class="categories">\n                                <li>Category</li>\n                            </ul>\n\n                            <ul class="versions">\n                                <li>\n                                    <a href="#">1.2.3</a>\n                                </li>\n                            </ul>\n\n                        </li>\n                    </ul>\n                </div>\n\n                <div class="span4">\n\n                    <h2>Categories</h2>\n\n                    <ul class="category-links">\n                        <li>Category</li>\n                    </ul>\n\n                </div>\n            </div>\n            \n        </div>\n\n        <script type="text/javascript" src="../../assets/js/main.js"><\/script>\n    </body>\n</html>\n');
-  var sym__3071__auto___3441 = cljs.core.nth.call(null, vec__3435_3440, 0, null);
-  var txt__3072__auto___3442 = cljs.core.nth.call(null, vec__3435_3440, 1, null);
-  cljs.core.swap_BANG_.call(null, enfocus.core.tpl_cache, cljs.core.assoc, "category-tplresources/views/index.html", cljs.core.PersistentVector.fromArray([sym__3071__auto___3441, txt__3072__auto___3442], true))
+  var vec__10162_10167 = enfocus.core.replace_ids.call(null, '<!DOCTYPE html>\n\n<html>\n    <head>\n        <title>Bounder - Clojure Docs</title>\n        <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css" />\n        <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />\n    </head>\n    <body>\n\n        <div class="navbar navbar-inverse">\n            <div class="navbar-inner">\n                <span class="brand">\n                    Clojure/Script Documentation\n                </span>\n            </div>\n        </div>\n\n        <div class="container">\n\n            <div class="row">\n\n                <div class="span8">\n\n                    <div class="search">\n                        <input type="text"\n                               placeholder="Filter by name/category" />\n                    </div>\n\n                    <h2>Projects</h2>\n\n                    <ul class="projects">\n                        <li class="project">\n\n                            <h3>\n                                <a href="#">Project Name</a>\n                            </h3>\n\n                            <div class="description">\n                                Here is the description of the project. It could be quite long,\n                                but I don\'t know just how long.  Better just allow this to\n                                stretch vertically I suppose...\n                            </div>\n\n                            <ul class="categories">\n                                <li>Category</li>\n                            </ul>\n\n                            <ul class="versions">\n                                <li>\n                                    <a href="#">1.2.3</a>\n                                </li>\n                            </ul>\n\n                        </li>\n                    </ul>\n                </div>\n\n                <div class="span4">\n\n                    <h2>Categories</h2>\n\n                    <ul class="category-links">\n                        <li>Category</li>\n                    </ul>\n\n                </div>\n            </div>\n            \n        </div>\n\n        <script type="text/javascript" src="../../assets/js/main.js"><\/script>\n    </body>\n</html>\n');
+  var sym__3071__auto___10168 = cljs.core.nth.call(null, vec__10162_10167, 0, null);
+  var txt__3072__auto___10169 = cljs.core.nth.call(null, vec__10162_10167, 1, null);
+  cljs.core.swap_BANG_.call(null, enfocus.core.tpl_cache, cljs.core.assoc, "category-tplresources/views/index.html", cljs.core.PersistentVector.fromArray([sym__3071__auto___10168, txt__3072__auto___10169], true))
 }else {
 }
 bounder.html.category_tpl = function category_tpl(category) {
-  var vec__3439 = function() {
+  var vec__10166 = function() {
     return enfocus.core.get_cached_snippet.call(null, "category-tplresources/views/index.html", cljs.core.PersistentVector.fromArray(["\ufdd0'.categories", "\ufdd0'li"], true))
   }.call(null);
-  var id_sym3436 = cljs.core.nth.call(null, vec__3439, 0, null);
-  var pnod3437 = cljs.core.nth.call(null, vec__3439, 1, null);
-  var pnod3437__$1 = enfocus.core.create_hidden_dom.call(null, pnod3437);
-  enfocus.core.i_at.call(null, id_sym3436, pnod3437__$1, cljs.core.PersistentVector.fromArray(["\ufdd0'*"], true), enfocus.core.en_content.call(null, cljs.core.name.call(null, category)));
-  enfocus.core.reset_ids.call(null, id_sym3436, pnod3437__$1);
-  return enfocus.core.remove_node_return_child.call(null, pnod3437__$1)
+  var id_sym10163 = cljs.core.nth.call(null, vec__10166, 0, null);
+  var pnod10164 = cljs.core.nth.call(null, vec__10166, 1, null);
+  var pnod10164__$1 = enfocus.core.create_hidden_dom.call(null, pnod10164);
+  enfocus.core.i_at.call(null, id_sym10163, pnod10164__$1, cljs.core.PersistentVector.fromArray(["\ufdd0'*"], true), enfocus.core.en_content.call(null, cljs.core.name.call(null, category)));
+  enfocus.core.reset_ids.call(null, id_sym10163, pnod10164__$1);
+  return enfocus.core.remove_node_return_child.call(null, pnod10164__$1)
 };
 if(cljs.core.deref.call(null, enfocus.core.tpl_cache).call(null, "resources/views/index.html") == null) {
-  var vec__3443_3448 = enfocus.core.replace_ids.call(null, '<!DOCTYPE html>\n\n<html>\n    <head>\n        <title>Bounder - Clojure Docs</title>\n        <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css" />\n        <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />\n    </head>\n    <body>\n\n        <div class="navbar navbar-inverse">\n            <div class="navbar-inner">\n                <span class="brand">\n                    Clojure/Script Documentation\n                </span>\n            </div>\n        </div>\n\n        <div class="container">\n\n            <div class="row">\n\n                <div class="span8">\n\n                    <div class="search">\n                        <input type="text"\n                               placeholder="Filter by name/category" />\n                    </div>\n\n                    <h2>Projects</h2>\n\n                    <ul class="projects">\n                        <li class="project">\n\n                            <h3>\n                                <a href="#">Project Name</a>\n                            </h3>\n\n                            <div class="description">\n                                Here is the description of the project. It could be quite long,\n                                but I don\'t know just how long.  Better just allow this to\n                                stretch vertically I suppose...\n                            </div>\n\n                            <ul class="categories">\n                                <li>Category</li>\n                            </ul>\n\n                            <ul class="versions">\n                                <li>\n                                    <a href="#">1.2.3</a>\n                                </li>\n                            </ul>\n\n                        </li>\n                    </ul>\n                </div>\n\n                <div class="span4">\n\n                    <h2>Categories</h2>\n\n                    <ul class="category-links">\n                        <li>Category</li>\n                    </ul>\n\n                </div>\n            </div>\n            \n        </div>\n\n        <script type="text/javascript" src="../../assets/js/main.js"><\/script>\n    </body>\n</html>\n');
-  var sym__3071__auto___3449 = cljs.core.nth.call(null, vec__3443_3448, 0, null);
-  var txt__3072__auto___3450 = cljs.core.nth.call(null, vec__3443_3448, 1, null);
-  cljs.core.swap_BANG_.call(null, enfocus.core.tpl_cache, cljs.core.assoc, "version-tplresources/views/index.html", cljs.core.PersistentVector.fromArray([sym__3071__auto___3449, txt__3072__auto___3450], true))
+  var vec__10170_10175 = enfocus.core.replace_ids.call(null, '<!DOCTYPE html>\n\n<html>\n    <head>\n        <title>Bounder - Clojure Docs</title>\n        <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css" />\n        <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />\n    </head>\n    <body>\n\n        <div class="navbar navbar-inverse">\n            <div class="navbar-inner">\n                <span class="brand">\n                    Clojure/Script Documentation\n                </span>\n            </div>\n        </div>\n\n        <div class="container">\n\n            <div class="row">\n\n                <div class="span8">\n\n                    <div class="search">\n                        <input type="text"\n                               placeholder="Filter by name/category" />\n                    </div>\n\n                    <h2>Projects</h2>\n\n                    <ul class="projects">\n                        <li class="project">\n\n                            <h3>\n                                <a href="#">Project Name</a>\n                            </h3>\n\n                            <div class="description">\n                                Here is the description of the project. It could be quite long,\n                                but I don\'t know just how long.  Better just allow this to\n                                stretch vertically I suppose...\n                            </div>\n\n                            <ul class="categories">\n                                <li>Category</li>\n                            </ul>\n\n                            <ul class="versions">\n                                <li>\n                                    <a href="#">1.2.3</a>\n                                </li>\n                            </ul>\n\n                        </li>\n                    </ul>\n                </div>\n\n                <div class="span4">\n\n                    <h2>Categories</h2>\n\n                    <ul class="category-links">\n                        <li>Category</li>\n                    </ul>\n\n                </div>\n            </div>\n            \n        </div>\n\n        <script type="text/javascript" src="../../assets/js/main.js"><\/script>\n    </body>\n</html>\n');
+  var sym__3071__auto___10176 = cljs.core.nth.call(null, vec__10170_10175, 0, null);
+  var txt__3072__auto___10177 = cljs.core.nth.call(null, vec__10170_10175, 1, null);
+  cljs.core.swap_BANG_.call(null, enfocus.core.tpl_cache, cljs.core.assoc, "version-tplresources/views/index.html", cljs.core.PersistentVector.fromArray([sym__3071__auto___10176, txt__3072__auto___10177], true))
 }else {
 }
 bounder.html.version_tpl = function version_tpl(project, version) {
-  var vec__3447 = function() {
+  var vec__10174 = function() {
     return enfocus.core.get_cached_snippet.call(null, "version-tplresources/views/index.html", cljs.core.PersistentVector.fromArray(["\ufdd0'.versions", "\ufdd0'li"], true))
   }.call(null);
-  var id_sym3444 = cljs.core.nth.call(null, vec__3447, 0, null);
-  var pnod3445 = cljs.core.nth.call(null, vec__3447, 1, null);
-  var pnod3445__$1 = enfocus.core.create_hidden_dom.call(null, pnod3445);
-  enfocus.core.i_at.call(null, id_sym3444, pnod3445__$1, cljs.core.PersistentVector.fromArray(["\ufdd0'a"], true), enfocus.core.en_do__GT_.call(null, enfocus.core.en_content.call(null, version), enfocus.core.en_set_attr.call(null, "\ufdd0'href", bounder.html.version_url.call(null, project, version))));
-  enfocus.core.reset_ids.call(null, id_sym3444, pnod3445__$1);
-  return enfocus.core.remove_node_return_child.call(null, pnod3445__$1)
+  var id_sym10171 = cljs.core.nth.call(null, vec__10174, 0, null);
+  var pnod10172 = cljs.core.nth.call(null, vec__10174, 1, null);
+  var pnod10172__$1 = enfocus.core.create_hidden_dom.call(null, pnod10172);
+  enfocus.core.i_at.call(null, id_sym10171, pnod10172__$1, cljs.core.PersistentVector.fromArray(["\ufdd0'a"], true), enfocus.core.en_do__GT_.call(null, enfocus.core.en_content.call(null, version), enfocus.core.en_set_attr.call(null, "\ufdd0'href", bounder.html.version_url.call(null, project, version))));
+  enfocus.core.reset_ids.call(null, id_sym10171, pnod10172__$1);
+  return enfocus.core.remove_node_return_child.call(null, pnod10172__$1)
 };
 if(cljs.core.deref.call(null, enfocus.core.tpl_cache).call(null, "resources/views/index.html") == null) {
-  var vec__3451_3456 = enfocus.core.replace_ids.call(null, '<!DOCTYPE html>\n\n<html>\n    <head>\n        <title>Bounder - Clojure Docs</title>\n        <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css" />\n        <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />\n    </head>\n    <body>\n\n        <div class="navbar navbar-inverse">\n            <div class="navbar-inner">\n                <span class="brand">\n                    Clojure/Script Documentation\n                </span>\n            </div>\n        </div>\n\n        <div class="container">\n\n            <div class="row">\n\n                <div class="span8">\n\n                    <div class="search">\n                        <input type="text"\n                               placeholder="Filter by name/category" />\n                    </div>\n\n                    <h2>Projects</h2>\n\n                    <ul class="projects">\n                        <li class="project">\n\n                            <h3>\n                                <a href="#">Project Name</a>\n                            </h3>\n\n                            <div class="description">\n                                Here is the description of the project. It could be quite long,\n                                but I don\'t know just how long.  Better just allow this to\n                                stretch vertically I suppose...\n                            </div>\n\n                            <ul class="categories">\n                                <li>Category</li>\n                            </ul>\n\n                            <ul class="versions">\n                                <li>\n                                    <a href="#">1.2.3</a>\n                                </li>\n                            </ul>\n\n                        </li>\n                    </ul>\n                </div>\n\n                <div class="span4">\n\n                    <h2>Categories</h2>\n\n                    <ul class="category-links">\n                        <li>Category</li>\n                    </ul>\n\n                </div>\n            </div>\n            \n        </div>\n\n        <script type="text/javascript" src="../../assets/js/main.js"><\/script>\n    </body>\n</html>\n');
-  var sym__3071__auto___3457 = cljs.core.nth.call(null, vec__3451_3456, 0, null);
-  var txt__3072__auto___3458 = cljs.core.nth.call(null, vec__3451_3456, 1, null);
-  cljs.core.swap_BANG_.call(null, enfocus.core.tpl_cache, cljs.core.assoc, "project-tplresources/views/index.html", cljs.core.PersistentVector.fromArray([sym__3071__auto___3457, txt__3072__auto___3458], true))
+  var vec__10178_10183 = enfocus.core.replace_ids.call(null, '<!DOCTYPE html>\n\n<html>\n    <head>\n        <title>Bounder - Clojure Docs</title>\n        <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css" />\n        <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />\n    </head>\n    <body>\n\n        <div class="navbar navbar-inverse">\n            <div class="navbar-inner">\n                <span class="brand">\n                    Clojure/Script Documentation\n                </span>\n            </div>\n        </div>\n\n        <div class="container">\n\n            <div class="row">\n\n                <div class="span8">\n\n                    <div class="search">\n                        <input type="text"\n                               placeholder="Filter by name/category" />\n                    </div>\n\n                    <h2>Projects</h2>\n\n                    <ul class="projects">\n                        <li class="project">\n\n                            <h3>\n                                <a href="#">Project Name</a>\n                            </h3>\n\n                            <div class="description">\n                                Here is the description of the project. It could be quite long,\n                                but I don\'t know just how long.  Better just allow this to\n                                stretch vertically I suppose...\n                            </div>\n\n                            <ul class="categories">\n                                <li>Category</li>\n                            </ul>\n\n                            <ul class="versions">\n                                <li>\n                                    <a href="#">1.2.3</a>\n                                </li>\n                            </ul>\n\n                        </li>\n                    </ul>\n                </div>\n\n                <div class="span4">\n\n                    <h2>Categories</h2>\n\n                    <ul class="category-links">\n                        <li>Category</li>\n                    </ul>\n\n                </div>\n            </div>\n            \n        </div>\n\n        <script type="text/javascript" src="../../assets/js/main.js"><\/script>\n    </body>\n</html>\n');
+  var sym__3071__auto___10184 = cljs.core.nth.call(null, vec__10178_10183, 0, null);
+  var txt__3072__auto___10185 = cljs.core.nth.call(null, vec__10178_10183, 1, null);
+  cljs.core.swap_BANG_.call(null, enfocus.core.tpl_cache, cljs.core.assoc, "project-tplresources/views/index.html", cljs.core.PersistentVector.fromArray([sym__3071__auto___10184, txt__3072__auto___10185], true))
 }else {
 }
 bounder.html.project_tpl = function project_tpl(project) {
-  var vec__3455 = function() {
+  var vec__10182 = function() {
     return enfocus.core.get_cached_snippet.call(null, "project-tplresources/views/index.html", cljs.core.PersistentVector.fromArray(["\ufdd0'.projects", "\ufdd0'>", "\ufdd0'li"], true))
   }.call(null);
-  var id_sym3452 = cljs.core.nth.call(null, vec__3455, 0, null);
-  var pnod3453 = cljs.core.nth.call(null, vec__3455, 1, null);
-  var pnod3453__$1 = enfocus.core.create_hidden_dom.call(null, pnod3453);
-  enfocus.core.i_at.call(null, id_sym3452, pnod3453__$1, cljs.core.PersistentVector.fromArray(["\ufdd0'h3", "\ufdd0'a"], true), enfocus.core.en_do__GT_.call(null, enfocus.core.en_content.call(null, (new cljs.core.Keyword("\ufdd0'name")).call(null, project)), enfocus.core.en_set_attr.call(null, "\ufdd0'href", (new cljs.core.Keyword("\ufdd0'url")).call(null, project))), cljs.core.PersistentVector.fromArray(["\ufdd0'.description"], true), enfocus.core.en_content.call(null, (new cljs.core.Keyword("\ufdd0'description")).call(null, 
+  var id_sym10179 = cljs.core.nth.call(null, vec__10182, 0, null);
+  var pnod10180 = cljs.core.nth.call(null, vec__10182, 1, null);
+  var pnod10180__$1 = enfocus.core.create_hidden_dom.call(null, pnod10180);
+  enfocus.core.i_at.call(null, id_sym10179, pnod10180__$1, cljs.core.PersistentVector.fromArray(["\ufdd0'h3", "\ufdd0'a"], true), enfocus.core.en_do__GT_.call(null, enfocus.core.en_content.call(null, (new cljs.core.Keyword("\ufdd0'name")).call(null, project)), enfocus.core.en_set_attr.call(null, "\ufdd0'href", (new cljs.core.Keyword("\ufdd0'url")).call(null, project))), cljs.core.PersistentVector.fromArray(["\ufdd0'.description"], true), enfocus.core.en_content.call(null, (new cljs.core.Keyword("\ufdd0'description")).call(null, 
   project)), cljs.core.PersistentVector.fromArray(["\ufdd0'.versions"], true), enfocus.core.en_content.call(null, cljs.core.map.call(null, cljs.core.partial.call(null, bounder.html.version_tpl, project), (new cljs.core.Keyword("\ufdd0'versions")).call(null, project))), cljs.core.PersistentVector.fromArray(["\ufdd0'.categories"], true), enfocus.core.en_content.call(null, cljs.core.map.call(null, bounder.html.category_tpl, (new cljs.core.Keyword("\ufdd0'categories")).call(null, project))));
-  enfocus.core.reset_ids.call(null, id_sym3452, pnod3453__$1);
-  return enfocus.core.remove_node_return_child.call(null, pnod3453__$1)
+  enfocus.core.reset_ids.call(null, id_sym10179, pnod10180__$1);
+  return enfocus.core.remove_node_return_child.call(null, pnod10180__$1)
+};
+bounder.html.loaded = function loaded() {
+  return enfocus.core.at.call(null, document, cljs.core.PersistentVector.fromArray(["body"], true), enfocus.core.en_add_class.call(null, "loaded"))
 };
 bounder.html.render_projects = function render_projects(projects) {
   return enfocus.core.at.call(null, document, cljs.core.PersistentVector.fromArray([".projects"], true), cljs.core.empty_QMARK_.call(null, projects) ? enfocus.core.en_html_content.call(null, '<li class="empty">Nothing found...</li>') : enfocus.core.en_content.call(null, cljs.core.map.call(null, bounder.html.project_tpl, projects)))
@@ -33428,20 +33431,17 @@ goog.require("domina");
 goog.require("bounder.html");
 bounder.core.filter_input = domina.single_node.call(null, domina.css.sel.call(null, ".search input"));
 bounder.core.project_matches = function project_matches(query, project) {
-  var categories = cljs.core.map.call(null, cljs.core.name, (new cljs.core.Keyword("\ufdd0'categories")).call(null, project));
-  var words = cljs.core.cons.call(null, (new cljs.core.Keyword("\ufdd0'name")).call(null, project), categories);
-  var to_match = clojure.string.lower_case.call(null, clojure.string.join.call(null, " ", words));
+  var words = cljs.core.cons.call(null, (new cljs.core.Keyword("\ufdd0'name")).call(null, project), cljs.core.map.call(null, cljs.core.name, (new cljs.core.Keyword("\ufdd0'categories")).call(null, project)));
+  var to_match = clojure.string.lower_case.call(null, clojure.string.join.call(null, "", words));
   return 0 <= to_match.indexOf(clojure.string.lower_case.call(null, query))
 };
 bounder.core.apply_filter_for = function apply_filter_for(projects) {
   var query = domina.value.call(null, bounder.core.filter_input);
-  var to_show = cljs.core.filter.call(null, cljs.core.partial.call(null, bounder.core.project_matches, query), projects);
-  return bounder.html.render_projects.call(null, to_show)
+  return bounder.html.render_projects.call(null, cljs.core.filter.call(null, cljs.core.partial.call(null, bounder.core.project_matches, query), projects))
 };
 bounder.core.filter_category = function filter_category(projects, evt) {
   var target = evt.currentTarget;
-  var category = target.innerHTML;
-  domina.set_value_BANG_.call(null, bounder.core.filter_input, category);
+  domina.set_value_BANG_.call(null, bounder.core.filter_input, target.innerHTML);
   return bounder.core.apply_filter_for.call(null, projects)
 };
 bounder.core.init_listeners = function init_listeners(projects) {
@@ -33450,5 +33450,6 @@ bounder.core.init_listeners = function init_listeners(projects) {
 bounder.core.init = function init(projects_edn) {
   var projects = cljs.reader.read_string.call(null, projects_edn);
   bounder.core.init_listeners.call(null, projects);
-  return bounder.html.render_projects.call(null, projects)
+  bounder.html.render_projects.call(null, projects);
+  return bounder.html.loaded.call(null)
 };

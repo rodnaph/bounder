@@ -14,20 +14,23 @@
     (sel ".search input")))
 
 (defn project-matches [query project]
-  (let [categories (map name (:categories project))
-        words (cons (:name project) categories)
-        to-match (s/lower-case (s/join " " words))]
+  (let [words (cons (:name project)
+                    (map name (:categories project)))
+        to-match (->> words
+                   (s/join "")
+                   (s/lower-case))]
     (<= 0 (.indexOf to-match (s/lower-case query)))))
 
 (defn apply-filter-for [projects]
- (let [query (value filter-input)
-       to-show (filter (partial project-matches query) projects)]
-   (html/render-projects to-show)))
+ (let [query (value filter-input)]
+   (html/render-projects 
+     (filter (partial project-matches query)
+             projects))))
 
 (defn filter-category [projects evt]
-  (let [target (.-currentTarget evt)
-        category (.-innerHTML target)]
-    (set-value! filter-input category)
+  (let [target (.-currentTarget evt)]
+    (set-value! filter-input 
+                (.-innerHTML target))
     (apply-filter-for projects)))
 
 (defn init-listeners [projects]
@@ -44,5 +47,6 @@
 (defn init [projects-edn]
   (let [projects (reader/read-string projects-edn)]
     (init-listeners projects)
-    (html/render-projects projects)))
+    (html/render-projects projects)
+    (html/loaded)))
 

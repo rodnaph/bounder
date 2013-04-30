@@ -33,6 +33,10 @@
 ;; Public
 ;; ------
 
+(defn loaded []
+  (at js/document
+      ["body"] (em/add-class "loaded")))
+
 (defn render-projects [projects]
   (at js/document
       [".projects"] (if (empty? projects)

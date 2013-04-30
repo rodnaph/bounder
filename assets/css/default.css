@@ -1,5 +1,21 @@
 
 .projects,
+.loaded .loader {
+    display: none;
+}
+
+.loaded .projects {
+    display: block;
+}
+
+.loader,
+.empty {
+    margin-top: 40px;
+    color: #ccc;
+    font-size: 3em;
+}
+
+.projects,
 .categories,
 .versions {
     list-style-type: none;
@@ -44,12 +60,6 @@
 .search {
     float: right;
     margin: 15px 0 0 0;
-}
-
-.empty {
-    margin-top: 40px;
-    color: #ccc;
-    font-size: 3em;
 }
 
 .category-links {
