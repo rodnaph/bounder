@@ -26,6 +26,14 @@
           {:categories [:database]
            :versions ["0.0.2"]})
 
+  (github "rodnaph/confo"
+          {:categories [:configuration]
+           :versions ["0.4.0"]})
+
+  (github "rodnaph/gmailer"
+          {:categories [:email]
+           :versions ["0.0.1"]})
+
   (github "clj-jgit/clj-jgit"
           {:categories [:tools :git]
            :versions ["v0.0.3"]})
