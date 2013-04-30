@@ -16,7 +16,9 @@ At the moment (imho) I see two problems using Clojure libraries.
 ## The Solution
 
 So to try and help with this, I'm trying out some ideas for a super-each way to create
-a useful index of projects, and then to be able to browse their documentation.
+a useful index of projects, and then to be able to browse their documentation.  Bounder
+has been designed to run as a completely static site, so all documentation and assets
+are built and committed to Git.
 
 # Disclaimer
 
