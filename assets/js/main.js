@@ -33436,8 +33436,7 @@ bounder.core.filter_projects = function filter_projects(projects, evt) {
   return bounder.html.render_projects.call(null, to_show)
 };
 bounder.core.init_listeners = function init_listeners(projects) {
-  var filterer = cljs.core.partial.call(null, bounder.core.filter_projects, projects);
-  return enfocus.core.at.call(null, document, cljs.core.PersistentVector.fromArray(["input"], true), enfocus.core.en_listen.call(null, "\ufdd0'keyup", lowline.functions.debounce.call(null, filterer, 500)))
+  return enfocus.core.at.call(null, document, cljs.core.PersistentVector.fromArray(["input"], true), enfocus.core.en_listen.call(null, "\ufdd0'keyup", lowline.functions.debounce.call(null, cljs.core.partial.call(null, bounder.core.filter_projects, projects), 500)), cljs.core.PersistentVector.fromArray([".category-links li"], true), enfocus.core.en_listen.call(null, "\ufdd0'click", bounder.core.filterer))
 };
 bounder.core.init = function init(projects_edn) {
   var projects = cljs.reader.read_string.call(null, projects_edn);

@@ -20,11 +20,15 @@
     (html/render-projects to-show)))
 
 (defn init-listeners [projects]
-  (let [filterer (partial filter-projects projects)]
-    (at js/document
-          ["input"] (em/listen
-                      :keyup
-                      (debounce filterer 500)))))
+  (at js/document
+    ["input"] (em/listen
+                :keyup
+                (debounce
+                  (partial filter-projects projects)
+                  500))
+    [".category-links li"] (em/listen
+                             :click
+                             filterer)))
 
 (defn init [projects-edn]
   (let [projects (reader/read-string projects-edn)]

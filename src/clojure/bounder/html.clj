@@ -16,13 +16,21 @@
        "bounder.core.init.call(null, '%s')"
        (pr-str projects))]))
 
+(defn- categories-for [projects]
+  (->> projects
+       (map :categories)
+       (apply concat)
+       (map name)))
+
 (deftemplate index "index.html"
   [projects]
   [:link] (to-static-url :href)
   [:script] (to-static-url :src)
   [:body] (append (projects-as-edn projects))
   [:title] (content (format "Bounder (%d projects)"
-                            (count projects))))
+                            (count projects)))
+  [:.category-links :li] (clone-for [category (categories-for projects)]
+                                    (content category)))
 
 ;; Public
 ;; ------

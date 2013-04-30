@@ -52,3 +52,19 @@
     font-size: 3em;
 }
 
+.category-links {
+    list-style-type: none;
+    margin: 0;
+}
+
+.category-links li {
+    font-size: 1.3em;
+    cursor: pointer;
+    border-left: 4px transparent solid;
+    padding: 5px 5px 5px 10px;
+}
+
+.category-links li:hover {
+    border-color: #aaa;
+}
+
