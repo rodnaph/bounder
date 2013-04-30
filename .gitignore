@@ -11,4 +11,3 @@ pom.xml.asc
 .lein-plugins
 .lein-repl-history
 /resources/public/projects
-/assets/js/main.js
