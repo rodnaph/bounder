@@ -6,8 +6,11 @@
                  [clj-jgit "0.3.5"]
                  [codox "0.6.4"]
                  [fs "1.3.3"]
-                 [enlive "1.0.1"]
+                 [enlive "1.1.1"]
                  ; clojurescript
+                 [domina "1.0.1"]
+                 [leaf "0.0.2"]
+                 [lowline "0.0.1"]
                  [enfocus "1.0.1"]]
   :source-paths ["src/clojure" "resources/views"]
   :plugins [[lein-cljsbuild "0.3.0"]]
