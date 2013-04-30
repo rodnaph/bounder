@@ -20,6 +20,13 @@ a useful index of projects, and then to be able to browse their documentation.  
 has been designed to run as a completely static site, so all documentation and assets
 are built and committed to Git.
 
+## Isn't this just like site X?
+
+I know of some other sites that aggregate libraries (http://clojurewerkz.org/, or http://clojure-libraries.appspot.com/)
+but they don't provide any documentation.  I'd love to contribute to an existing
+site to add this kind of thing, so I'll reiterate this is an experiment.  If it
+is useful it could be folded in to an existing solution.
+
 # Disclaimer
 
 This might be rubbish, and at the moment only supports Clojure projects.  I
