@@ -1,6 +1,6 @@
 
 (ns bounder.html
-  (:require [enfocus.core :refer [at]])
+  (:require [enfocus.core :refer [at html]])
   (:require-macros [enfocus.macros :as em]))
 
 (defn version-url [project version]
@@ -35,6 +35,9 @@
 
 (defn render-projects [projects]
   (at js/document
-      [".projects"] (em/content
-                      (map project-tpl projects))))
+      [".projects"] (if (empty? projects)
+                      (em/html-content
+                        "<li class=\"empty\">Nothing found...</li>")
+                      (em/content
+                        (map project-tpl projects)))))
 

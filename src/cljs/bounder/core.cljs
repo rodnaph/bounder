@@ -17,7 +17,6 @@
 (defn filter-projects [projects evt]
   (let [query (value (.-currentTarget evt))
         to-show (filter (partial project-matches query) projects)]
-    (.log js/console (count to-show))
     (html/render-projects to-show)))
 
 (defn init-listeners [projects]
@@ -25,7 +24,7 @@
     (at js/document
           ["input"] (em/listen
                       :keyup
-                      (debounce filterer)))))
+                      (debounce filterer 500)))))
 
 (defn init [projects-edn]
   (let [projects (reader/read-string projects-edn)]
