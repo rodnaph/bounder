@@ -12,7 +12,7 @@
                  [leaf "0.0.2"]
                  [lowline "0.0.1"]
                  [enfocus "1.0.1"]]
-  :source-paths ["src/clojure" "resources/views"]
+  :source-paths ["src/clojure" "src/html"]
   :plugins [[lein-cljsbuild "0.3.0"]]
   :main bounder.core
   :cljsbuild {

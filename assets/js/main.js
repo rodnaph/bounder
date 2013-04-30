@@ -22231,8 +22231,8 @@ enfocus.enlive.syntax.sel_to_string = function sel_to_string(item) {
       return item
     }else {
       if(cljs.core.coll_QMARK_.call(null, item)) {
-        return cljs.core.apply.call(null, cljs.core.str, cljs.core.map.call(null, function(p1__4263_SHARP_) {
-          return sel_to_string.call(null, p1__4263_SHARP_)
+        return cljs.core.apply.call(null, cljs.core.str, cljs.core.map.call(null, function(p1__4255_SHARP_) {
+          return sel_to_string.call(null, p1__4255_SHARP_)
         }, item))
       }else {
         return null
@@ -22248,18 +22248,18 @@ enfocus.enlive.syntax.convert = function convert(sel) {
   }
 };
 enfocus.enlive.syntax.attr_pairs = function attr_pairs(op, elms) {
-  var ts = function(p__4267) {
-    var vec__4268 = p__4267;
-    var x = cljs.core.nth.call(null, vec__4268, 0, null);
-    var y = cljs.core.nth.call(null, vec__4268, 1, null);
+  var ts = function(p__4259) {
+    var vec__4260 = p__4259;
+    var x = cljs.core.nth.call(null, vec__4260, 0, null);
+    var y = cljs.core.nth.call(null, vec__4260, 1, null);
     return[cljs.core.str("["), cljs.core.str(cljs.core.name.call(null, x)), cljs.core.str(op), cljs.core.str("='"), cljs.core.str(y), cljs.core.str("']")].join("")
   };
   return cljs.core.apply.call(null, cljs.core.str, cljs.core.map.call(null, ts, cljs.core.partition.call(null, 2, elms)))
 };
 enfocus.enlive.syntax.attr_QMARK_ = function() {
   var attr_QMARK___delegate = function(elms) {
-    return cljs.core.apply.call(null, cljs.core.str, cljs.core.map.call(null, function(p1__4264_SHARP_) {
-      return[cljs.core.str("["), cljs.core.str(cljs.core.name.call(null, p1__4264_SHARP_)), cljs.core.str("]")].join("")
+    return cljs.core.apply.call(null, cljs.core.str, cljs.core.map.call(null, function(p1__4256_SHARP_) {
+      return[cljs.core.str("["), cljs.core.str(cljs.core.name.call(null, p1__4256_SHARP_)), cljs.core.str("]")].join("")
     }, elms))
   };
   var attr_QMARK_ = function(var_args) {
@@ -22270,8 +22270,8 @@ enfocus.enlive.syntax.attr_QMARK_ = function() {
     return attr_QMARK___delegate.call(this, elms)
   };
   attr_QMARK_.cljs$lang$maxFixedArity = 0;
-  attr_QMARK_.cljs$lang$applyTo = function(arglist__4269) {
-    var elms = cljs.core.seq(arglist__4269);
+  attr_QMARK_.cljs$lang$applyTo = function(arglist__4261) {
+    var elms = cljs.core.seq(arglist__4261);
     return attr_QMARK___delegate(elms)
   };
   attr_QMARK_.cljs$lang$arity$variadic = attr_QMARK___delegate;
@@ -22289,8 +22289,8 @@ enfocus.enlive.syntax.attr_EQ_ = function() {
     return attr_EQ___delegate.call(this, elms)
   };
   attr_EQ_.cljs$lang$maxFixedArity = 0;
-  attr_EQ_.cljs$lang$applyTo = function(arglist__4270) {
-    var elms = cljs.core.seq(arglist__4270);
+  attr_EQ_.cljs$lang$applyTo = function(arglist__4262) {
+    var elms = cljs.core.seq(arglist__4262);
     return attr_EQ___delegate(elms)
   };
   attr_EQ_.cljs$lang$arity$variadic = attr_EQ___delegate;
@@ -22311,9 +22311,9 @@ enfocus.enlive.syntax.attr_has = function() {
     return attr_has__delegate.call(this, x, vals)
   };
   attr_has.cljs$lang$maxFixedArity = 1;
-  attr_has.cljs$lang$applyTo = function(arglist__4271) {
-    var x = cljs.core.first(arglist__4271);
-    var vals = cljs.core.rest(arglist__4271);
+  attr_has.cljs$lang$applyTo = function(arglist__4263) {
+    var x = cljs.core.first(arglist__4263);
+    var vals = cljs.core.rest(arglist__4263);
     return attr_has__delegate(x, vals)
   };
   attr_has.cljs$lang$arity$variadic = attr_has__delegate;
@@ -22331,8 +22331,8 @@ enfocus.enlive.syntax.attr_starts = function() {
     return attr_starts__delegate.call(this, elms)
   };
   attr_starts.cljs$lang$maxFixedArity = 0;
-  attr_starts.cljs$lang$applyTo = function(arglist__4272) {
-    var elms = cljs.core.seq(arglist__4272);
+  attr_starts.cljs$lang$applyTo = function(arglist__4264) {
+    var elms = cljs.core.seq(arglist__4264);
     return attr_starts__delegate(elms)
   };
   attr_starts.cljs$lang$arity$variadic = attr_starts__delegate;
@@ -22350,8 +22350,8 @@ enfocus.enlive.syntax.attr_ends = function() {
     return attr_ends__delegate.call(this, elms)
   };
   attr_ends.cljs$lang$maxFixedArity = 0;
-  attr_ends.cljs$lang$applyTo = function(arglist__4273) {
-    var elms = cljs.core.seq(arglist__4273);
+  attr_ends.cljs$lang$applyTo = function(arglist__4265) {
+    var elms = cljs.core.seq(arglist__4265);
     return attr_ends__delegate(elms)
   };
   attr_ends.cljs$lang$arity$variadic = attr_ends__delegate;
@@ -22369,8 +22369,8 @@ enfocus.enlive.syntax.attr_contains = function() {
     return attr_contains__delegate.call(this, elms)
   };
   attr_contains.cljs$lang$maxFixedArity = 0;
-  attr_contains.cljs$lang$applyTo = function(arglist__4274) {
-    var elms = cljs.core.seq(arglist__4274);
+  attr_contains.cljs$lang$applyTo = function(arglist__4266) {
+    var elms = cljs.core.seq(arglist__4266);
     return attr_contains__delegate(elms)
   };
   attr_contains.cljs$lang$arity$variadic = attr_contains__delegate;
@@ -22388,8 +22388,8 @@ enfocus.enlive.syntax.attr_BAR__EQ_ = function() {
     return attr_BAR__EQ___delegate.call(this, elms)
   };
   attr_BAR__EQ_.cljs$lang$maxFixedArity = 0;
-  attr_BAR__EQ_.cljs$lang$applyTo = function(arglist__4275) {
-    var elms = cljs.core.seq(arglist__4275);
+  attr_BAR__EQ_.cljs$lang$applyTo = function(arglist__4267) {
+    var elms = cljs.core.seq(arglist__4267);
     return attr_BAR__EQ___delegate(elms)
   };
   attr_BAR__EQ_.cljs$lang$arity$variadic = attr_BAR__EQ___delegate;
@@ -22512,8 +22512,8 @@ enfocus.enlive.syntax.but = function() {
     return but__delegate.call(this, sel)
   };
   but.cljs$lang$maxFixedArity = 0;
-  but.cljs$lang$applyTo = function(arglist__4276) {
-    var sel = cljs.core.seq(arglist__4276);
+  but.cljs$lang$applyTo = function(arglist__4268) {
+    var sel = cljs.core.seq(arglist__4268);
     return but__delegate(sel)
   };
   but.cljs$lang$arity$variadic = but__delegate;
@@ -25999,12 +25999,12 @@ clojure.string.split = function() {
           if(cljs.core.truth_(temp__4090__auto__)) {
             var m = temp__4090__auto__;
             var index = s__$1.indexOf(m);
-            var G__4277 = s__$1.substring(index + cljs.core.count.call(null, m));
-            var G__4278 = limit__$1 - 1;
-            var G__4279 = cljs.core.conj.call(null, parts, s__$1.substring(0, index));
-            s__$1 = G__4277;
-            limit__$1 = G__4278;
-            parts = G__4279;
+            var G__4269 = s__$1.substring(index + cljs.core.count.call(null, m));
+            var G__4270 = limit__$1 - 1;
+            var G__4271 = cljs.core.conj.call(null, parts, s__$1.substring(0, index));
+            s__$1 = G__4269;
+            limit__$1 = G__4270;
+            parts = G__4271;
             continue
           }else {
             return cljs.core.conj.call(null, parts, s__$1)
@@ -26054,8 +26054,8 @@ clojure.string.trim_newline = function trim_newline(s) {
           return cljs.core._EQ_.call(null, ch, "\r")
         }
       }()) {
-        var G__4280 = index - 1;
-        index = G__4280;
+        var G__4272 = index - 1;
+        index = G__4272;
         continue
       }else {
         return s.substring(0, index)
@@ -26076,15 +26076,15 @@ clojure.string.escape = function escape(s, cmap) {
       return buffer.toString()
     }else {
       var ch = s.charAt(index);
-      var temp__4090__auto___4281 = cljs.core._lookup.call(null, cmap, ch, null);
-      if(cljs.core.truth_(temp__4090__auto___4281)) {
-        var replacement_4282 = temp__4090__auto___4281;
-        buffer.append([cljs.core.str(replacement_4282)].join(""))
+      var temp__4090__auto___4273 = cljs.core._lookup.call(null, cmap, ch, null);
+      if(cljs.core.truth_(temp__4090__auto___4273)) {
+        var replacement_4274 = temp__4090__auto___4273;
+        buffer.append([cljs.core.str(replacement_4274)].join(""))
       }else {
         buffer.append(ch)
       }
-      var G__4283 = index + 1;
-      index = G__4283;
+      var G__4275 = index + 1;
+      index = G__4275;
       continue
     }
     break
@@ -27108,12 +27108,12 @@ goog.provide("domina.support");
 goog.require("cljs.core");
 goog.require("goog.events");
 goog.require("goog.dom");
-var div_4396 = document.createElement("div");
-var test_html_4397 = "   <link/><table></table><a href='/a' style='top:1px;float:left;opacity:.55;'>a</a><input type='checkbox'/>";
-div_4396.innerHTML = test_html_4397;
-domina.support.leading_whitespace_QMARK_ = cljs.core._EQ_.call(null, div_4396.firstChild.nodeType, 3);
-domina.support.extraneous_tbody_QMARK_ = cljs.core._EQ_.call(null, div_4396.getElementsByTagName("tbody").length, 0);
-domina.support.unscoped_html_elements_QMARK_ = cljs.core._EQ_.call(null, div_4396.getElementsByTagName("link").length, 0);
+var div_4388 = document.createElement("div");
+var test_html_4389 = "   <link/><table></table><a href='/a' style='top:1px;float:left;opacity:.55;'>a</a><input type='checkbox'/>";
+div_4388.innerHTML = test_html_4389;
+domina.support.leading_whitespace_QMARK_ = cljs.core._EQ_.call(null, div_4388.firstChild.nodeType, 3);
+domina.support.extraneous_tbody_QMARK_ = cljs.core._EQ_.call(null, div_4388.getElementsByTagName("tbody").length, 0);
+domina.support.unscoped_html_elements_QMARK_ = cljs.core._EQ_.call(null, div_4388.getElementsByTagName("link").length, 0);
 goog.provide("domina");
 goog.require("cljs.core");
 goog.require("domina.support");
@@ -27132,11 +27132,11 @@ domina.re_xhtml_tag = /<(?!area|br|col|embed|hr|img|input|link|meta|param)(([\w:
 domina.re_tag_name = /<([\w:]+)/;
 domina.re_no_inner_html = /<(?:script|style)/i;
 domina.re_tbody = /<tbody/i;
-var opt_wrapper_4284 = cljs.core.PersistentVector.fromArray([1, "<select multiple='multiple'>", "</select>"], true);
-var table_section_wrapper_4285 = cljs.core.PersistentVector.fromArray([1, "<table>", "</table>"], true);
-var cell_wrapper_4286 = cljs.core.PersistentVector.fromArray([3, "<table><tbody><tr>", "</tr></tbody></table>"], true);
-domina.wrap_map = cljs.core.ObjMap.fromObject(["col", "\ufdd0'default", "tfoot", "caption", "optgroup", "legend", "area", "td", "thead", "th", "option", "tbody", "tr", "colgroup"], {"col":cljs.core.PersistentVector.fromArray([2, "<table><tbody></tbody><colgroup>", "</colgroup></table>"], true), "\ufdd0'default":cljs.core.PersistentVector.fromArray([0, "", ""], true), "tfoot":table_section_wrapper_4285, "caption":table_section_wrapper_4285, "optgroup":opt_wrapper_4284, "legend":cljs.core.PersistentVector.fromArray([1, 
-"<fieldset>", "</fieldset>"], true), "area":cljs.core.PersistentVector.fromArray([1, "<map>", "</map>"], true), "td":cell_wrapper_4286, "thead":table_section_wrapper_4285, "th":cell_wrapper_4286, "option":opt_wrapper_4284, "tbody":table_section_wrapper_4285, "tr":cljs.core.PersistentVector.fromArray([2, "<table><tbody>", "</tbody></table>"], true), "colgroup":table_section_wrapper_4285});
+var opt_wrapper_4276 = cljs.core.PersistentVector.fromArray([1, "<select multiple='multiple'>", "</select>"], true);
+var table_section_wrapper_4277 = cljs.core.PersistentVector.fromArray([1, "<table>", "</table>"], true);
+var cell_wrapper_4278 = cljs.core.PersistentVector.fromArray([3, "<table><tbody><tr>", "</tr></tbody></table>"], true);
+domina.wrap_map = cljs.core.ObjMap.fromObject(["col", "\ufdd0'default", "tfoot", "caption", "optgroup", "legend", "area", "td", "thead", "th", "option", "tbody", "tr", "colgroup"], {"col":cljs.core.PersistentVector.fromArray([2, "<table><tbody></tbody><colgroup>", "</colgroup></table>"], true), "\ufdd0'default":cljs.core.PersistentVector.fromArray([0, "", ""], true), "tfoot":table_section_wrapper_4277, "caption":table_section_wrapper_4277, "optgroup":opt_wrapper_4276, "legend":cljs.core.PersistentVector.fromArray([1, 
+"<fieldset>", "</fieldset>"], true), "area":cljs.core.PersistentVector.fromArray([1, "<map>", "</map>"], true), "td":cell_wrapper_4278, "thead":table_section_wrapper_4277, "th":cell_wrapper_4278, "option":opt_wrapper_4276, "tbody":table_section_wrapper_4277, "tr":cljs.core.PersistentVector.fromArray([2, "<table><tbody>", "</tbody></table>"], true), "colgroup":table_section_wrapper_4277});
 domina.remove_extraneous_tbody_BANG_ = function remove_extraneous_tbody_BANG_(div, html, tag_name, start_wrap) {
   var no_tbody_QMARK_ = cljs.core.not.call(null, cljs.core.re_find.call(null, domina.re_tbody, html));
   var tbody = function() {
@@ -27161,10 +27161,10 @@ domina.remove_extraneous_tbody_BANG_ = function remove_extraneous_tbody_BANG_(di
       return and__3941__auto__
     }
   }() ? divchildNodes : cljs.core.PersistentVector.EMPTY;
-  var G__4288 = cljs.core.seq.call(null, tbody);
+  var G__4280 = cljs.core.seq.call(null, tbody);
   while(true) {
-    if(G__4288) {
-      var child = cljs.core.first.call(null, G__4288);
+    if(G__4280) {
+      var child = cljs.core.first.call(null, G__4280);
       if(function() {
         var and__3941__auto__ = cljs.core._EQ_.call(null, child.nodeName, "tbody");
         if(and__3941__auto__) {
@@ -27176,8 +27176,8 @@ domina.remove_extraneous_tbody_BANG_ = function remove_extraneous_tbody_BANG_(di
         child.parentNode.removeChild(child)
       }else {
       }
-      var G__4289 = cljs.core.next.call(null, G__4288);
-      G__4288 = G__4289;
+      var G__4281 = cljs.core.next.call(null, G__4280);
+      G__4280 = G__4281;
       continue
     }else {
       return null
@@ -27191,10 +27191,10 @@ domina.restore_leading_whitespace_BANG_ = function restore_leading_whitespace_BA
 domina.html_to_dom = function html_to_dom(html) {
   var html__$1 = clojure.string.replace.call(null, html, domina.re_xhtml_tag, "<$1></$2>");
   var tag_name = [cljs.core.str(cljs.core.second.call(null, cljs.core.re_find.call(null, domina.re_tag_name, html__$1)))].join("").toLowerCase();
-  var vec__4291 = cljs.core._lookup.call(null, domina.wrap_map, tag_name, (new cljs.core.Keyword("\ufdd0'default")).call(null, domina.wrap_map));
-  var depth = cljs.core.nth.call(null, vec__4291, 0, null);
-  var start_wrap = cljs.core.nth.call(null, vec__4291, 1, null);
-  var end_wrap = cljs.core.nth.call(null, vec__4291, 2, null);
+  var vec__4283 = cljs.core._lookup.call(null, domina.wrap_map, tag_name, (new cljs.core.Keyword("\ufdd0'default")).call(null, domina.wrap_map));
+  var depth = cljs.core.nth.call(null, vec__4283, 0, null);
+  var start_wrap = cljs.core.nth.call(null, vec__4283, 1, null);
+  var end_wrap = cljs.core.nth.call(null, vec__4283, 2, null);
   var div = function() {
     var wrapper = function() {
       var div = document.createElement("div");
@@ -27204,10 +27204,10 @@ domina.html_to_dom = function html_to_dom(html) {
     var level = depth;
     while(true) {
       if(level > 0) {
-        var G__4292 = wrapper.lastChild;
-        var G__4293 = level - 1;
-        wrapper = G__4292;
-        level = G__4293;
+        var G__4284 = wrapper.lastChild;
+        var G__4285 = level - 1;
+        wrapper = G__4284;
+        level = G__4285;
         continue
       }else {
         return wrapper
@@ -27318,8 +27318,8 @@ domina.log_debug = function() {
     return log_debug__delegate.call(this, mesg)
   };
   log_debug.cljs$lang$maxFixedArity = 0;
-  log_debug.cljs$lang$applyTo = function(arglist__4294) {
-    var mesg = cljs.core.seq(arglist__4294);
+  log_debug.cljs$lang$applyTo = function(arglist__4286) {
+    var mesg = cljs.core.seq(arglist__4286);
     return log_debug__delegate(mesg)
   };
   log_debug.cljs$lang$arity$variadic = log_debug__delegate;
@@ -27341,8 +27341,8 @@ domina.log = function() {
     return log__delegate.call(this, mesg)
   };
   log.cljs$lang$maxFixedArity = 0;
-  log.cljs$lang$applyTo = function(arglist__4295) {
-    var mesg = cljs.core.seq(arglist__4295);
+  log.cljs$lang$applyTo = function(arglist__4287) {
+    var mesg = cljs.core.seq(arglist__4287);
     return log__delegate(mesg)
   };
   log.cljs$lang$arity$variadic = log__delegate;
@@ -27352,42 +27352,42 @@ domina.by_id = function by_id(id) {
   return goog.dom.getElement(cljs.core.name.call(null, id))
 };
 domina.by_class = function by_class(class_name) {
-  if(void 0 === domina.t4299) {
-    goog.provide("domina.t4299");
-    domina.t4299 = function(class_name, by_class, meta4300) {
+  if(void 0 === domina.t4291) {
+    goog.provide("domina.t4291");
+    domina.t4291 = function(class_name, by_class, meta4292) {
       this.class_name = class_name;
       this.by_class = by_class;
-      this.meta4300 = meta4300;
+      this.meta4292 = meta4292;
       this.cljs$lang$protocol_mask$partition1$ = 0;
       this.cljs$lang$protocol_mask$partition0$ = 393216
     };
-    domina.t4299.cljs$lang$type = true;
-    domina.t4299.cljs$lang$ctorPrSeq = function(this__2485__auto__) {
-      return cljs.core.list.call(null, "domina/t4299")
+    domina.t4291.cljs$lang$type = true;
+    domina.t4291.cljs$lang$ctorPrSeq = function(this__2485__auto__) {
+      return cljs.core.list.call(null, "domina/t4291")
     };
-    domina.t4299.cljs$lang$ctorPrWriter = function(this__2485__auto__, writer__2486__auto__, opt__2487__auto__) {
-      return cljs.core._write.call(null, writer__2486__auto__, "domina/t4299")
+    domina.t4291.cljs$lang$ctorPrWriter = function(this__2485__auto__, writer__2486__auto__, opt__2487__auto__) {
+      return cljs.core._write.call(null, writer__2486__auto__, "domina/t4291")
     };
-    domina.t4299.prototype.domina$DomContent$ = true;
-    domina.t4299.prototype.domina$DomContent$nodes$arity$1 = function(_) {
+    domina.t4291.prototype.domina$DomContent$ = true;
+    domina.t4291.prototype.domina$DomContent$nodes$arity$1 = function(_) {
       var self__ = this;
       return domina.normalize_seq.call(null, goog.dom.getElementsByClass(cljs.core.name.call(null, self__.class_name)))
     };
-    domina.t4299.prototype.domina$DomContent$single_node$arity$1 = function(_) {
+    domina.t4291.prototype.domina$DomContent$single_node$arity$1 = function(_) {
       var self__ = this;
       return domina.normalize_seq.call(null, goog.dom.getElementByClass(cljs.core.name.call(null, self__.class_name)))
     };
-    domina.t4299.prototype.cljs$core$IMeta$_meta$arity$1 = function(_4301) {
+    domina.t4291.prototype.cljs$core$IMeta$_meta$arity$1 = function(_4293) {
       var self__ = this;
-      return self__.meta4300
+      return self__.meta4292
     };
-    domina.t4299.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_4301, meta4300__$1) {
+    domina.t4291.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_4293, meta4292__$1) {
       var self__ = this;
-      return new domina.t4299(self__.class_name, self__.by_class, meta4300__$1)
+      return new domina.t4291(self__.class_name, self__.by_class, meta4292__$1)
     }
   }else {
   }
-  return new domina.t4299(class_name, by_class, null)
+  return new domina.t4291(class_name, by_class, null)
 };
 domina.children = function children(content) {
   return cljs.core.doall.call(null, cljs.core.mapcat.call(null, goog.dom.getChildren, domina.nodes.call(null, content)))
@@ -27404,8 +27404,8 @@ domina.common_ancestor = function() {
     return common_ancestor__delegate.call(this, contents)
   };
   common_ancestor.cljs$lang$maxFixedArity = 0;
-  common_ancestor.cljs$lang$applyTo = function(arglist__4302) {
-    var contents = cljs.core.seq(arglist__4302);
+  common_ancestor.cljs$lang$applyTo = function(arglist__4294) {
+    var contents = cljs.core.seq(arglist__4294);
     return common_ancestor__delegate(contents)
   };
   common_ancestor.cljs$lang$arity$variadic = common_ancestor__delegate;
@@ -27415,8 +27415,8 @@ domina.ancestor_QMARK_ = function ancestor_QMARK_(ancestor_content, descendant_c
   return cljs.core._EQ_.call(null, domina.common_ancestor.call(null, ancestor_content, descendant_content), domina.single_node.call(null, ancestor_content))
 };
 domina.clone = function clone(content) {
-  return cljs.core.map.call(null, function(p1__4303_SHARP_) {
-    return p1__4303_SHARP_.cloneNode(true)
+  return cljs.core.map.call(null, function(p1__4295_SHARP_) {
+    return p1__4295_SHARP_.cloneNode(true)
   }, domina.nodes.call(null, content))
 };
 domina.append_BANG_ = function append_BANG_(parent_content, child_content) {
@@ -27424,8 +27424,8 @@ domina.append_BANG_ = function append_BANG_(parent_content, child_content) {
   return parent_content
 };
 domina.insert_BANG_ = function insert_BANG_(parent_content, child_content, idx) {
-  domina.apply_with_cloning.call(null, function(p1__4304_SHARP_, p2__4305_SHARP_) {
-    return goog.dom.insertChildAt(p1__4304_SHARP_, p2__4305_SHARP_, idx)
+  domina.apply_with_cloning.call(null, function(p1__4296_SHARP_, p2__4297_SHARP_) {
+    return goog.dom.insertChildAt(p1__4296_SHARP_, p2__4297_SHARP_, idx)
   }, parent_content, child_content);
   return parent_content
 };
@@ -27434,20 +27434,20 @@ domina.prepend_BANG_ = function prepend_BANG_(parent_content, child_content) {
   return parent_content
 };
 domina.insert_before_BANG_ = function insert_before_BANG_(content, new_content) {
-  domina.apply_with_cloning.call(null, function(p1__4307_SHARP_, p2__4306_SHARP_) {
-    return goog.dom.insertSiblingBefore(p2__4306_SHARP_, p1__4307_SHARP_)
+  domina.apply_with_cloning.call(null, function(p1__4299_SHARP_, p2__4298_SHARP_) {
+    return goog.dom.insertSiblingBefore(p2__4298_SHARP_, p1__4299_SHARP_)
   }, content, new_content);
   return content
 };
 domina.insert_after_BANG_ = function insert_after_BANG_(content, new_content) {
-  domina.apply_with_cloning.call(null, function(p1__4309_SHARP_, p2__4308_SHARP_) {
-    return goog.dom.insertSiblingAfter(p2__4308_SHARP_, p1__4309_SHARP_)
+  domina.apply_with_cloning.call(null, function(p1__4301_SHARP_, p2__4300_SHARP_) {
+    return goog.dom.insertSiblingAfter(p2__4300_SHARP_, p1__4301_SHARP_)
   }, content, new_content);
   return content
 };
 domina.swap_content_BANG_ = function swap_content_BANG_(old_content, new_content) {
-  domina.apply_with_cloning.call(null, function(p1__4311_SHARP_, p2__4310_SHARP_) {
-    return goog.dom.replaceNode(p2__4310_SHARP_, p1__4311_SHARP_)
+  domina.apply_with_cloning.call(null, function(p1__4303_SHARP_, p2__4302_SHARP_) {
+    return goog.dom.replaceNode(p2__4302_SHARP_, p1__4303_SHARP_)
   }, old_content, new_content);
   return old_content
 };
@@ -27474,13 +27474,13 @@ domina.attr = function attr(content, name) {
 };
 domina.set_style_BANG_ = function() {
   var set_style_BANG___delegate = function(content, name, value) {
-    var G__4313_4314 = cljs.core.seq.call(null, domina.nodes.call(null, content));
+    var G__4305_4306 = cljs.core.seq.call(null, domina.nodes.call(null, content));
     while(true) {
-      if(G__4313_4314) {
-        var n_4315 = cljs.core.first.call(null, G__4313_4314);
-        goog.style.setStyle(n_4315, cljs.core.name.call(null, name), cljs.core.apply.call(null, cljs.core.str, value));
-        var G__4316 = cljs.core.next.call(null, G__4313_4314);
-        G__4313_4314 = G__4316;
+      if(G__4305_4306) {
+        var n_4307 = cljs.core.first.call(null, G__4305_4306);
+        goog.style.setStyle(n_4307, cljs.core.name.call(null, name), cljs.core.apply.call(null, cljs.core.str, value));
+        var G__4308 = cljs.core.next.call(null, G__4305_4306);
+        G__4305_4306 = G__4308;
         continue
       }else {
       }
@@ -27496,10 +27496,10 @@ domina.set_style_BANG_ = function() {
     return set_style_BANG___delegate.call(this, content, name, value)
   };
   set_style_BANG_.cljs$lang$maxFixedArity = 2;
-  set_style_BANG_.cljs$lang$applyTo = function(arglist__4317) {
-    var content = cljs.core.first(arglist__4317);
-    var name = cljs.core.first(cljs.core.next(arglist__4317));
-    var value = cljs.core.rest(cljs.core.next(arglist__4317));
+  set_style_BANG_.cljs$lang$applyTo = function(arglist__4309) {
+    var content = cljs.core.first(arglist__4309);
+    var name = cljs.core.first(cljs.core.next(arglist__4309));
+    var value = cljs.core.rest(cljs.core.next(arglist__4309));
     return set_style_BANG___delegate(content, name, value)
   };
   set_style_BANG_.cljs$lang$arity$variadic = set_style_BANG___delegate;
@@ -27507,13 +27507,13 @@ domina.set_style_BANG_ = function() {
 }();
 domina.set_attr_BANG_ = function() {
   var set_attr_BANG___delegate = function(content, name, value) {
-    var G__4319_4320 = cljs.core.seq.call(null, domina.nodes.call(null, content));
+    var G__4311_4312 = cljs.core.seq.call(null, domina.nodes.call(null, content));
     while(true) {
-      if(G__4319_4320) {
-        var n_4321 = cljs.core.first.call(null, G__4319_4320);
-        n_4321.setAttribute(cljs.core.name.call(null, name), cljs.core.apply.call(null, cljs.core.str, value));
-        var G__4322 = cljs.core.next.call(null, G__4319_4320);
-        G__4319_4320 = G__4322;
+      if(G__4311_4312) {
+        var n_4313 = cljs.core.first.call(null, G__4311_4312);
+        n_4313.setAttribute(cljs.core.name.call(null, name), cljs.core.apply.call(null, cljs.core.str, value));
+        var G__4314 = cljs.core.next.call(null, G__4311_4312);
+        G__4311_4312 = G__4314;
         continue
       }else {
       }
@@ -27529,23 +27529,23 @@ domina.set_attr_BANG_ = function() {
     return set_attr_BANG___delegate.call(this, content, name, value)
   };
   set_attr_BANG_.cljs$lang$maxFixedArity = 2;
-  set_attr_BANG_.cljs$lang$applyTo = function(arglist__4323) {
-    var content = cljs.core.first(arglist__4323);
-    var name = cljs.core.first(cljs.core.next(arglist__4323));
-    var value = cljs.core.rest(cljs.core.next(arglist__4323));
+  set_attr_BANG_.cljs$lang$applyTo = function(arglist__4315) {
+    var content = cljs.core.first(arglist__4315);
+    var name = cljs.core.first(cljs.core.next(arglist__4315));
+    var value = cljs.core.rest(cljs.core.next(arglist__4315));
     return set_attr_BANG___delegate(content, name, value)
   };
   set_attr_BANG_.cljs$lang$arity$variadic = set_attr_BANG___delegate;
   return set_attr_BANG_
 }();
 domina.remove_attr_BANG_ = function remove_attr_BANG_(content, name) {
-  var G__4325_4326 = cljs.core.seq.call(null, domina.nodes.call(null, content));
+  var G__4317_4318 = cljs.core.seq.call(null, domina.nodes.call(null, content));
   while(true) {
-    if(G__4325_4326) {
-      var n_4327 = cljs.core.first.call(null, G__4325_4326);
-      n_4327.removeAttribute(cljs.core.name.call(null, name));
-      var G__4328 = cljs.core.next.call(null, G__4325_4326);
-      G__4325_4326 = G__4328;
+    if(G__4317_4318) {
+      var n_4319 = cljs.core.first.call(null, G__4317_4318);
+      n_4319.removeAttribute(cljs.core.name.call(null, name));
+      var G__4320 = cljs.core.next.call(null, G__4317_4318);
+      G__4317_4318 = G__4320;
       continue
     }else {
     }
@@ -27555,9 +27555,9 @@ domina.remove_attr_BANG_ = function remove_attr_BANG_(content, name) {
 };
 domina.parse_style_attributes = function parse_style_attributes(style) {
   return cljs.core.reduce.call(null, function(acc, pair) {
-    var vec__4330 = pair.split(/\s*:\s*/);
-    var k = cljs.core.nth.call(null, vec__4330, 0, null);
-    var v = cljs.core.nth.call(null, vec__4330, 1, null);
+    var vec__4322 = pair.split(/\s*:\s*/);
+    var k = cljs.core.nth.call(null, vec__4322, 0, null);
+    var v = cljs.core.nth.call(null, vec__4322, 1, null);
     if(cljs.core.truth_(function() {
       var and__3941__auto__ = k;
       if(cljs.core.truth_(and__3941__auto__)) {
@@ -27587,8 +27587,8 @@ domina.styles = function styles(content) {
 domina.attrs = function attrs(content) {
   var node = domina.single_node.call(null, content);
   var attrs__$1 = node.attributes;
-  return cljs.core.reduce.call(null, cljs.core.conj, cljs.core.filter.call(null, cljs.core.complement.call(null, cljs.core.nil_QMARK_), cljs.core.map.call(null, function(p1__4331_SHARP_) {
-    var attr = attrs__$1.item(p1__4331_SHARP_);
+  return cljs.core.reduce.call(null, cljs.core.conj, cljs.core.filter.call(null, cljs.core.complement.call(null, cljs.core.nil_QMARK_), cljs.core.map.call(null, function(p1__4323_SHARP_) {
+    var attr = attrs__$1.item(p1__4323_SHARP_);
     var value = attr.nodeValue;
     if(function() {
       var and__3941__auto__ = cljs.core.not_EQ_.call(null, null, value);
@@ -27605,15 +27605,15 @@ domina.attrs = function attrs(content) {
   }, cljs.core.range.call(null, attrs__$1.length))))
 };
 domina.set_styles_BANG_ = function set_styles_BANG_(content, styles) {
-  var G__4334_4336 = cljs.core.seq.call(null, styles);
+  var G__4326_4328 = cljs.core.seq.call(null, styles);
   while(true) {
-    if(G__4334_4336) {
-      var vec__4335_4337 = cljs.core.first.call(null, G__4334_4336);
-      var name_4338 = cljs.core.nth.call(null, vec__4335_4337, 0, null);
-      var value_4339 = cljs.core.nth.call(null, vec__4335_4337, 1, null);
-      domina.set_style_BANG_.call(null, content, name_4338, value_4339);
-      var G__4340 = cljs.core.next.call(null, G__4334_4336);
-      G__4334_4336 = G__4340;
+    if(G__4326_4328) {
+      var vec__4327_4329 = cljs.core.first.call(null, G__4326_4328);
+      var name_4330 = cljs.core.nth.call(null, vec__4327_4329, 0, null);
+      var value_4331 = cljs.core.nth.call(null, vec__4327_4329, 1, null);
+      domina.set_style_BANG_.call(null, content, name_4330, value_4331);
+      var G__4332 = cljs.core.next.call(null, G__4326_4328);
+      G__4326_4328 = G__4332;
       continue
     }else {
     }
@@ -27622,15 +27622,15 @@ domina.set_styles_BANG_ = function set_styles_BANG_(content, styles) {
   return content
 };
 domina.set_attrs_BANG_ = function set_attrs_BANG_(content, attrs) {
-  var G__4343_4345 = cljs.core.seq.call(null, attrs);
+  var G__4335_4337 = cljs.core.seq.call(null, attrs);
   while(true) {
-    if(G__4343_4345) {
-      var vec__4344_4346 = cljs.core.first.call(null, G__4343_4345);
-      var name_4347 = cljs.core.nth.call(null, vec__4344_4346, 0, null);
-      var value_4348 = cljs.core.nth.call(null, vec__4344_4346, 1, null);
-      domina.set_attr_BANG_.call(null, content, name_4347, value_4348);
-      var G__4349 = cljs.core.next.call(null, G__4343_4345);
-      G__4343_4345 = G__4349;
+    if(G__4335_4337) {
+      var vec__4336_4338 = cljs.core.first.call(null, G__4335_4337);
+      var name_4339 = cljs.core.nth.call(null, vec__4336_4338, 0, null);
+      var value_4340 = cljs.core.nth.call(null, vec__4336_4338, 1, null);
+      domina.set_attr_BANG_.call(null, content, name_4339, value_4340);
+      var G__4341 = cljs.core.next.call(null, G__4335_4337);
+      G__4335_4337 = G__4341;
       continue
     }else {
     }
@@ -27642,13 +27642,13 @@ domina.has_class_QMARK_ = function has_class_QMARK_(content, class$) {
   return goog.dom.classes.has(domina.single_node.call(null, content), class$)
 };
 domina.add_class_BANG_ = function add_class_BANG_(content, class$) {
-  var G__4351_4352 = cljs.core.seq.call(null, domina.nodes.call(null, content));
+  var G__4343_4344 = cljs.core.seq.call(null, domina.nodes.call(null, content));
   while(true) {
-    if(G__4351_4352) {
-      var node_4353 = cljs.core.first.call(null, G__4351_4352);
-      goog.dom.classes.add(node_4353, class$);
-      var G__4354 = cljs.core.next.call(null, G__4351_4352);
-      G__4351_4352 = G__4354;
+    if(G__4343_4344) {
+      var node_4345 = cljs.core.first.call(null, G__4343_4344);
+      goog.dom.classes.add(node_4345, class$);
+      var G__4346 = cljs.core.next.call(null, G__4343_4344);
+      G__4343_4344 = G__4346;
       continue
     }else {
     }
@@ -27657,13 +27657,13 @@ domina.add_class_BANG_ = function add_class_BANG_(content, class$) {
   return content
 };
 domina.remove_class_BANG_ = function remove_class_BANG_(content, class$) {
-  var G__4356_4357 = cljs.core.seq.call(null, domina.nodes.call(null, content));
+  var G__4348_4349 = cljs.core.seq.call(null, domina.nodes.call(null, content));
   while(true) {
-    if(G__4356_4357) {
-      var node_4358 = cljs.core.first.call(null, G__4356_4357);
-      goog.dom.classes.remove(node_4358, class$);
-      var G__4359 = cljs.core.next.call(null, G__4356_4357);
-      G__4356_4357 = G__4359;
+    if(G__4348_4349) {
+      var node_4350 = cljs.core.first.call(null, G__4348_4349);
+      goog.dom.classes.remove(node_4350, class$);
+      var G__4351 = cljs.core.next.call(null, G__4348_4349);
+      G__4348_4349 = G__4351;
       continue
     }else {
     }
@@ -27675,14 +27675,14 @@ domina.classes = function classes(content) {
   return cljs.core.seq.call(null, goog.dom.classes.get(domina.single_node.call(null, content)))
 };
 domina.set_classes_BANG_ = function set_classes_BANG_(content, classes) {
-  var classes_4362__$1 = cljs.core.coll_QMARK_.call(null, classes) ? clojure.string.join.call(null, " ", classes) : classes;
-  var G__4361_4363 = cljs.core.seq.call(null, domina.nodes.call(null, content));
+  var classes_4354__$1 = cljs.core.coll_QMARK_.call(null, classes) ? clojure.string.join.call(null, " ", classes) : classes;
+  var G__4353_4355 = cljs.core.seq.call(null, domina.nodes.call(null, content));
   while(true) {
-    if(G__4361_4363) {
-      var node_4364 = cljs.core.first.call(null, G__4361_4363);
-      goog.dom.classes.set(node_4364, classes_4362__$1);
-      var G__4365 = cljs.core.next.call(null, G__4361_4363);
-      G__4361_4363 = G__4365;
+    if(G__4353_4355) {
+      var node_4356 = cljs.core.first.call(null, G__4353_4355);
+      goog.dom.classes.set(node_4356, classes_4354__$1);
+      var G__4357 = cljs.core.next.call(null, G__4353_4355);
+      G__4353_4355 = G__4357;
       continue
     }else {
     }
@@ -27694,13 +27694,13 @@ domina.text = function text(content) {
   return goog.string.trim(goog.dom.getTextContent(domina.single_node.call(null, content)))
 };
 domina.set_text_BANG_ = function set_text_BANG_(content, value) {
-  var G__4367_4368 = cljs.core.seq.call(null, domina.nodes.call(null, content));
+  var G__4359_4360 = cljs.core.seq.call(null, domina.nodes.call(null, content));
   while(true) {
-    if(G__4367_4368) {
-      var node_4369 = cljs.core.first.call(null, G__4367_4368);
-      goog.dom.setTextContent(node_4369, value);
-      var G__4370 = cljs.core.next.call(null, G__4367_4368);
-      G__4367_4368 = G__4370;
+    if(G__4359_4360) {
+      var node_4361 = cljs.core.first.call(null, G__4359_4360);
+      goog.dom.setTextContent(node_4361, value);
+      var G__4362 = cljs.core.next.call(null, G__4359_4360);
+      G__4359_4360 = G__4362;
       continue
     }else {
     }
@@ -27712,13 +27712,13 @@ domina.value = function value(content) {
   return goog.dom.forms.getValue(domina.single_node.call(null, content))
 };
 domina.set_value_BANG_ = function set_value_BANG_(content, value) {
-  var G__4372_4373 = cljs.core.seq.call(null, domina.nodes.call(null, content));
+  var G__4364_4365 = cljs.core.seq.call(null, domina.nodes.call(null, content));
   while(true) {
-    if(G__4372_4373) {
-      var node_4374 = cljs.core.first.call(null, G__4372_4373);
-      goog.dom.forms.setValue(node_4374, value);
-      var G__4375 = cljs.core.next.call(null, G__4372_4373);
-      G__4372_4373 = G__4375;
+    if(G__4364_4365) {
+      var node_4366 = cljs.core.first.call(null, G__4364_4365);
+      goog.dom.forms.setValue(node_4366, value);
+      var G__4367 = cljs.core.next.call(null, G__4364_4365);
+      G__4364_4365 = G__4367;
       continue
     }else {
     }
@@ -27757,28 +27757,28 @@ domina.set_inner_html_BANG_ = function set_inner_html_BANG_(content, html_string
       return and__3941__auto__
     }
   }())) {
-    var value_4380 = clojure.string.replace.call(null, html_string, domina.re_xhtml_tag, "<$1></$2>");
+    var value_4372 = clojure.string.replace.call(null, html_string, domina.re_xhtml_tag, "<$1></$2>");
     try {
-      var G__4379_4381 = cljs.core.seq.call(null, domina.nodes.call(null, content));
+      var G__4371_4373 = cljs.core.seq.call(null, domina.nodes.call(null, content));
       while(true) {
-        if(G__4379_4381) {
-          var node_4382 = cljs.core.first.call(null, G__4379_4381);
-          goog.events.removeAll(node_4382);
-          node_4382.innerHTML = value_4380;
-          var G__4383 = cljs.core.next.call(null, G__4379_4381);
-          G__4379_4381 = G__4383;
+        if(G__4371_4373) {
+          var node_4374 = cljs.core.first.call(null, G__4371_4373);
+          goog.events.removeAll(node_4374);
+          node_4374.innerHTML = value_4372;
+          var G__4375 = cljs.core.next.call(null, G__4371_4373);
+          G__4371_4373 = G__4375;
           continue
         }else {
         }
         break
       }
-    }catch(e4378) {
-      if(cljs.core.instance_QMARK_.call(null, Error, e4378)) {
-        var e_4384 = e4378;
-        domina.replace_children_BANG_.call(null, content, value_4380)
+    }catch(e4370) {
+      if(cljs.core.instance_QMARK_.call(null, Error, e4370)) {
+        var e_4376 = e4370;
+        domina.replace_children_BANG_.call(null, content, value_4372)
       }else {
         if("\ufdd0'else") {
-          throw e4378;
+          throw e4370;
         }else {
         }
       }
@@ -27851,13 +27851,13 @@ domina.apply_with_cloning = function apply_with_cloning(f, parent_content, child
   var children = domina.nodes.call(null, child_content);
   var first_child = function() {
     var frag = document.createDocumentFragment();
-    var G__4388_4389 = cljs.core.seq.call(null, children);
+    var G__4380_4381 = cljs.core.seq.call(null, children);
     while(true) {
-      if(G__4388_4389) {
-        var child_4390 = cljs.core.first.call(null, G__4388_4389);
-        frag.appendChild(child_4390);
-        var G__4391 = cljs.core.next.call(null, G__4388_4389);
-        G__4388_4389 = G__4391;
+      if(G__4380_4381) {
+        var child_4382 = cljs.core.first.call(null, G__4380_4381);
+        frag.appendChild(child_4382);
+        var G__4383 = cljs.core.next.call(null, G__4380_4381);
+        G__4380_4381 = G__4383;
         continue
       }else {
       }
@@ -27870,8 +27870,8 @@ domina.apply_with_cloning = function apply_with_cloning(f, parent_content, child
   }));
   if(cljs.core.seq.call(null, parents)) {
     f.call(null, cljs.core.first.call(null, parents), first_child);
-    return cljs.core.doall.call(null, cljs.core.map.call(null, function(p1__4385_SHARP_, p2__4386_SHARP_) {
-      return f.call(null, p1__4385_SHARP_, p2__4386_SHARP_)
+    return cljs.core.doall.call(null, cljs.core.map.call(null, function(p1__4377_SHARP_, p2__4378_SHARP_) {
+      return f.call(null, p1__4377_SHARP_, p2__4378_SHARP_)
     }, cljs.core.rest.call(null, parents), other_children))
   }else {
     return null
@@ -27951,26 +27951,26 @@ domina.normalize_seq = function normalize_seq(list_thing) {
     return cljs.core.List.EMPTY
   }else {
     if(function() {
-      var G__4393 = list_thing;
-      if(G__4393) {
+      var G__4385 = list_thing;
+      if(G__4385) {
         if(function() {
-          var or__3943__auto__ = G__4393.cljs$lang$protocol_mask$partition0$ & 8388608;
+          var or__3943__auto__ = G__4385.cljs$lang$protocol_mask$partition0$ & 8388608;
           if(or__3943__auto__) {
             return or__3943__auto__
           }else {
-            return G__4393.cljs$core$ISeqable$
+            return G__4385.cljs$core$ISeqable$
           }
         }()) {
           return true
         }else {
-          if(!G__4393.cljs$lang$protocol_mask$partition0$) {
-            return cljs.core.type_satisfies_.call(null, cljs.core.ISeqable, G__4393)
+          if(!G__4385.cljs$lang$protocol_mask$partition0$) {
+            return cljs.core.type_satisfies_.call(null, cljs.core.ISeqable, G__4385)
           }else {
             return false
           }
         }
       }else {
-        return cljs.core.type_satisfies_.call(null, cljs.core.ISeqable, G__4393)
+        return cljs.core.type_satisfies_.call(null, cljs.core.ISeqable, G__4385)
       }
     }()) {
       return cljs.core.seq.call(null, list_thing)
@@ -27993,26 +27993,26 @@ domina.nodes["_"] = function(content) {
     return cljs.core.List.EMPTY
   }else {
     if(function() {
-      var G__4394 = content;
-      if(G__4394) {
+      var G__4386 = content;
+      if(G__4386) {
         if(function() {
-          var or__3943__auto__ = G__4394.cljs$lang$protocol_mask$partition0$ & 8388608;
+          var or__3943__auto__ = G__4386.cljs$lang$protocol_mask$partition0$ & 8388608;
           if(or__3943__auto__) {
             return or__3943__auto__
           }else {
-            return G__4394.cljs$core$ISeqable$
+            return G__4386.cljs$core$ISeqable$
           }
         }()) {
           return true
         }else {
-          if(!G__4394.cljs$lang$protocol_mask$partition0$) {
-            return cljs.core.type_satisfies_.call(null, cljs.core.ISeqable, G__4394)
+          if(!G__4386.cljs$lang$protocol_mask$partition0$) {
+            return cljs.core.type_satisfies_.call(null, cljs.core.ISeqable, G__4386)
           }else {
             return false
           }
         }
       }else {
-        return cljs.core.type_satisfies_.call(null, cljs.core.ISeqable, G__4394)
+        return cljs.core.type_satisfies_.call(null, cljs.core.ISeqable, G__4386)
       }
     }()) {
       return cljs.core.seq.call(null, content)
@@ -28034,26 +28034,26 @@ domina.single_node["_"] = function(content) {
     return null
   }else {
     if(function() {
-      var G__4395 = content;
-      if(G__4395) {
+      var G__4387 = content;
+      if(G__4387) {
         if(function() {
-          var or__3943__auto__ = G__4395.cljs$lang$protocol_mask$partition0$ & 8388608;
+          var or__3943__auto__ = G__4387.cljs$lang$protocol_mask$partition0$ & 8388608;
           if(or__3943__auto__) {
             return or__3943__auto__
           }else {
-            return G__4395.cljs$core$ISeqable$
+            return G__4387.cljs$core$ISeqable$
           }
         }()) {
           return true
         }else {
-          if(!G__4395.cljs$lang$protocol_mask$partition0$) {
-            return cljs.core.type_satisfies_.call(null, cljs.core.ISeqable, G__4395)
+          if(!G__4387.cljs$lang$protocol_mask$partition0$) {
+            return cljs.core.type_satisfies_.call(null, cljs.core.ISeqable, G__4387)
           }else {
             return false
           }
         }
       }else {
-        return cljs.core.type_satisfies_.call(null, cljs.core.ISeqable, G__4395)
+        return cljs.core.type_satisfies_.call(null, cljs.core.ISeqable, G__4387)
       }
     }()) {
       return cljs.core.first.call(null, content)
@@ -28189,10 +28189,10 @@ domina.xpath.select_nodes = function select_nodes(expr, node) {
     var acc = null;
     while(true) {
       if(i < num_results) {
-        var G__4255 = i + 1;
-        var G__4256 = cljs.core.cons.call(null, result.snapshotItem(i), acc);
-        i = G__4255;
-        acc = G__4256;
+        var G__4247 = i + 1;
+        var G__4248 = cljs.core.cons.call(null, result.snapshotItem(i), acc);
+        i = G__4247;
+        acc = G__4248;
         continue
       }else {
         return acc
@@ -28210,43 +28210,43 @@ domina.xpath.xpath = function() {
     return xpath.call(null, domina.xpath.root_element.call(null), expr)
   };
   var xpath__2 = function(base, expr) {
-    if(void 0 === domina.xpath.t4260) {
-      goog.provide("domina.xpath.t4260");
-      domina.xpath.t4260 = function(expr, base, xpath, meta4261) {
+    if(void 0 === domina.xpath.t4252) {
+      goog.provide("domina.xpath.t4252");
+      domina.xpath.t4252 = function(expr, base, xpath, meta4253) {
         this.expr = expr;
         this.base = base;
         this.xpath = xpath;
-        this.meta4261 = meta4261;
+        this.meta4253 = meta4253;
         this.cljs$lang$protocol_mask$partition1$ = 0;
         this.cljs$lang$protocol_mask$partition0$ = 393216
       };
-      domina.xpath.t4260.cljs$lang$type = true;
-      domina.xpath.t4260.cljs$lang$ctorPrSeq = function(this__2485__auto__) {
-        return cljs.core.list.call(null, "domina.xpath/t4260")
+      domina.xpath.t4252.cljs$lang$type = true;
+      domina.xpath.t4252.cljs$lang$ctorPrSeq = function(this__2485__auto__) {
+        return cljs.core.list.call(null, "domina.xpath/t4252")
       };
-      domina.xpath.t4260.cljs$lang$ctorPrWriter = function(this__2485__auto__, writer__2486__auto__, opt__2487__auto__) {
-        return cljs.core._write.call(null, writer__2486__auto__, "domina.xpath/t4260")
+      domina.xpath.t4252.cljs$lang$ctorPrWriter = function(this__2485__auto__, writer__2486__auto__, opt__2487__auto__) {
+        return cljs.core._write.call(null, writer__2486__auto__, "domina.xpath/t4252")
       };
-      domina.xpath.t4260.prototype.domina$DomContent$ = true;
-      domina.xpath.t4260.prototype.domina$DomContent$nodes$arity$1 = function(_) {
+      domina.xpath.t4252.prototype.domina$DomContent$ = true;
+      domina.xpath.t4252.prototype.domina$DomContent$nodes$arity$1 = function(_) {
         var self__ = this;
         return cljs.core.mapcat.call(null, cljs.core.partial.call(null, domina.xpath.select_nodes, self__.expr), domina.nodes.call(null, self__.base))
       };
-      domina.xpath.t4260.prototype.domina$DomContent$single_node$arity$1 = function(_) {
+      domina.xpath.t4252.prototype.domina$DomContent$single_node$arity$1 = function(_) {
         var self__ = this;
         return cljs.core.first.call(null, cljs.core.filter.call(null, cljs.core.complement.call(null, cljs.core.nil_QMARK_), cljs.core.map.call(null, cljs.core.partial.call(null, domina.xpath.select_node, self__.expr), domina.nodes.call(null, self__.base))))
       };
-      domina.xpath.t4260.prototype.cljs$core$IMeta$_meta$arity$1 = function(_4262) {
+      domina.xpath.t4252.prototype.cljs$core$IMeta$_meta$arity$1 = function(_4254) {
         var self__ = this;
-        return self__.meta4261
+        return self__.meta4253
       };
-      domina.xpath.t4260.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_4262, meta4261__$1) {
+      domina.xpath.t4252.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_4254, meta4253__$1) {
         var self__ = this;
-        return new domina.xpath.t4260(self__.expr, self__.base, self__.xpath, meta4261__$1)
+        return new domina.xpath.t4252(self__.expr, self__.base, self__.xpath, meta4253__$1)
       }
     }else {
     }
-    return new domina.xpath.t4260(expr, base, xpath, null)
+    return new domina.xpath.t4252(expr, base, xpath, null)
   };
   xpath = function(base, expr) {
     switch(arguments.length) {
@@ -30703,47 +30703,47 @@ domina.css.sel = function() {
     return sel.call(null, domina.css.root_element.call(null), expr)
   };
   var sel__2 = function(base, expr) {
-    if(void 0 === domina.css.t4252) {
-      goog.provide("domina.css.t4252");
-      domina.css.t4252 = function(expr, base, sel, meta4253) {
+    if(void 0 === domina.css.t4435) {
+      goog.provide("domina.css.t4435");
+      domina.css.t4435 = function(expr, base, sel, meta4436) {
         this.expr = expr;
         this.base = base;
         this.sel = sel;
-        this.meta4253 = meta4253;
+        this.meta4436 = meta4436;
         this.cljs$lang$protocol_mask$partition1$ = 0;
         this.cljs$lang$protocol_mask$partition0$ = 393216
       };
-      domina.css.t4252.cljs$lang$type = true;
-      domina.css.t4252.cljs$lang$ctorPrSeq = function(this__2485__auto__) {
-        return cljs.core.list.call(null, "domina.css/t4252")
+      domina.css.t4435.cljs$lang$type = true;
+      domina.css.t4435.cljs$lang$ctorPrSeq = function(this__2485__auto__) {
+        return cljs.core.list.call(null, "domina.css/t4435")
       };
-      domina.css.t4252.cljs$lang$ctorPrWriter = function(this__2485__auto__, writer__2486__auto__, opt__2487__auto__) {
-        return cljs.core._write.call(null, writer__2486__auto__, "domina.css/t4252")
+      domina.css.t4435.cljs$lang$ctorPrWriter = function(this__2485__auto__, writer__2486__auto__, opt__2487__auto__) {
+        return cljs.core._write.call(null, writer__2486__auto__, "domina.css/t4435")
       };
-      domina.css.t4252.prototype.domina$DomContent$ = true;
-      domina.css.t4252.prototype.domina$DomContent$nodes$arity$1 = function(_) {
+      domina.css.t4435.prototype.domina$DomContent$ = true;
+      domina.css.t4435.prototype.domina$DomContent$nodes$arity$1 = function(_) {
         var self__ = this;
-        return cljs.core.mapcat.call(null, function(p1__4247_SHARP_) {
-          return domina.normalize_seq.call(null, goog.dom.query(self__.expr, p1__4247_SHARP_))
+        return cljs.core.mapcat.call(null, function(p1__4430_SHARP_) {
+          return domina.normalize_seq.call(null, goog.dom.query(self__.expr, p1__4430_SHARP_))
         }, domina.nodes.call(null, self__.base))
       };
-      domina.css.t4252.prototype.domina$DomContent$single_node$arity$1 = function(_) {
+      domina.css.t4435.prototype.domina$DomContent$single_node$arity$1 = function(_) {
         var self__ = this;
-        return cljs.core.first.call(null, cljs.core.filter.call(null, cljs.core.complement.call(null, cljs.core.nil_QMARK_), cljs.core.mapcat.call(null, function(p1__4248_SHARP_) {
-          return domina.normalize_seq.call(null, goog.dom.query(self__.expr, p1__4248_SHARP_))
+        return cljs.core.first.call(null, cljs.core.filter.call(null, cljs.core.complement.call(null, cljs.core.nil_QMARK_), cljs.core.mapcat.call(null, function(p1__4431_SHARP_) {
+          return domina.normalize_seq.call(null, goog.dom.query(self__.expr, p1__4431_SHARP_))
         }, domina.nodes.call(null, self__.base))))
       };
-      domina.css.t4252.prototype.cljs$core$IMeta$_meta$arity$1 = function(_4254) {
+      domina.css.t4435.prototype.cljs$core$IMeta$_meta$arity$1 = function(_4437) {
         var self__ = this;
-        return self__.meta4253
+        return self__.meta4436
       };
-      domina.css.t4252.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_4254, meta4253__$1) {
+      domina.css.t4435.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_4437, meta4436__$1) {
         var self__ = this;
-        return new domina.css.t4252(self__.expr, self__.base, self__.sel, meta4253__$1)
+        return new domina.css.t4435(self__.expr, self__.base, self__.sel, meta4436__$1)
       }
     }else {
     }
-    return new domina.css.t4252(expr, base, sel, null)
+    return new domina.css.t4435(expr, base, sel, null)
   };
   sel = function(base, expr) {
     switch(arguments.length) {
@@ -32299,60 +32299,60 @@ goog.require("enfocus.core");
 bounder.html.version_url = function version_url(project, version) {
   return cljs.core.format.call(null, "projects/%s/%s/index.html", (new cljs.core.Keyword("\ufdd0'name")).call(null, project), version)
 };
-if(cljs.core.deref.call(null, enfocus.core.tpl_cache).call(null, "resources/views/index.html") == null) {
-  var vec__10162_10167 = enfocus.core.replace_ids.call(null, '<!DOCTYPE html>\n\n<html>\n    <head>\n        <title>Bounder - Clojure Docs</title>\n        <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css" />\n        <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />\n    </head>\n    <body>\n\n        <div class="navbar navbar-inverse">\n            <div class="navbar-inner">\n                <span class="brand">\n                    Clojure/Script Documentation\n                </span>\n            </div>\n        </div>\n\n        <div class="container">\n\n            <div class="row">\n\n                <div class="span8">\n\n                    <div class="search">\n                        <input type="text"\n                               placeholder="Filter by name/category" />\n                    </div>\n\n                    <h2>Projects</h2>\n\n                    <ul class="projects">\n                        <li class="project">\n\n                            <h3>\n                                <a href="#">Project Name</a>\n                            </h3>\n\n                            <div class="description">\n                                Here is the description of the project. It could be quite long,\n                                but I don\'t know just how long.  Better just allow this to\n                                stretch vertically I suppose...\n                            </div>\n\n                            <ul class="categories">\n                                <li>Category</li>\n                            </ul>\n\n                            <ul class="versions">\n                                <li>\n                                    <a href="#">1.2.3</a>\n                                </li>\n                            </ul>\n\n                        </li>\n                    </ul>\n                </div>\n\n                <div class="span4">\n\n                    <h2>Categories</h2>\n\n                    <ul class="category-links">\n                        <li>Category</li>\n                    </ul>\n\n                </div>\n            </div>\n            \n        </div>\n\n        <script type="text/javascript" src="../../assets/js/main.js"><\/script>\n    </body>\n</html>\n');
-  var sym__3071__auto___10168 = cljs.core.nth.call(null, vec__10162_10167, 0, null);
-  var txt__3072__auto___10169 = cljs.core.nth.call(null, vec__10162_10167, 1, null);
-  cljs.core.swap_BANG_.call(null, enfocus.core.tpl_cache, cljs.core.assoc, "category-tplresources/views/index.html", cljs.core.PersistentVector.fromArray([sym__3071__auto___10168, txt__3072__auto___10169], true))
+if(cljs.core.deref.call(null, enfocus.core.tpl_cache).call(null, "src/html/index.html") == null) {
+  var vec__3435_3440 = enfocus.core.replace_ids.call(null, '<!DOCTYPE html>\n\n<html>\n    <head>\n        <title>Bounder - Clojure Docs</title>\n        <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css" />\n        <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />\n    </head>\n    <body>\n\n        <div class="navbar navbar-inverse">\n            <div class="navbar-inner">\n                <span class="brand">\n                    Clojure/Script Documentation\n                </span>\n                <ul class="nav nav-tabs pull-right">\n                    <li>\n                        <a href="https://github.com/rodnaph/bounder/">About</a>\n                    </li>\n                </ul>\n            </div>\n        </div>\n\n        <div class="container">\n\n            <div class="row">\n\n                <div class="span8">\n\n                    <div class="search">\n                        <input type="search"\n                               placeholder="Filter by name/category" />\n                    </div>\n\n                    <h2>Projects</h2>\n\n                    <div class="loader">\n                        Loading projects...\n                    </div>\n\n                    <ul class="projects">\n                        <li class="project">\n\n                            <h3>\n                                <a href="#">Project Name</a>\n                            </h3>\n\n                            <div class="description">\n                                Here is the description of the project. It could be quite long,\n                                but I don\'t know just how long.  Better just allow this to\n                                stretch vertically I suppose...\n                            </div>\n\n                            <ul class="categories">\n                                <li>Category</li>\n                            </ul>\n\n                            <ul class="versions">\n                                <li>\n                                    <a href="#">1.2.3</a>\n                                </li>\n                            </ul>\n\n                        </li>\n                    </ul>\n                </div>\n\n                <div class="span4">\n\n                    <h2>Categories</h2>\n\n                    <ul class="category-links">\n                        <li>Category</li>\n                    </ul>\n\n                </div>\n            </div>\n            \n        </div>\n\n        <script type="text/javascript" src="../../assets/js/main.js"><\/script>\n    </body>\n</html>\n');
+  var sym__3071__auto___3441 = cljs.core.nth.call(null, vec__3435_3440, 0, null);
+  var txt__3072__auto___3442 = cljs.core.nth.call(null, vec__3435_3440, 1, null);
+  cljs.core.swap_BANG_.call(null, enfocus.core.tpl_cache, cljs.core.assoc, "category-tplsrc/html/index.html", cljs.core.PersistentVector.fromArray([sym__3071__auto___3441, txt__3072__auto___3442], true))
 }else {
 }
 bounder.html.category_tpl = function category_tpl(category) {
-  var vec__10166 = function() {
-    return enfocus.core.get_cached_snippet.call(null, "category-tplresources/views/index.html", cljs.core.PersistentVector.fromArray(["\ufdd0'.categories", "\ufdd0'li"], true))
+  var vec__3439 = function() {
+    return enfocus.core.get_cached_snippet.call(null, "category-tplsrc/html/index.html", cljs.core.PersistentVector.fromArray(["\ufdd0'.categories", "\ufdd0'li"], true))
   }.call(null);
-  var id_sym10163 = cljs.core.nth.call(null, vec__10166, 0, null);
-  var pnod10164 = cljs.core.nth.call(null, vec__10166, 1, null);
-  var pnod10164__$1 = enfocus.core.create_hidden_dom.call(null, pnod10164);
-  enfocus.core.i_at.call(null, id_sym10163, pnod10164__$1, cljs.core.PersistentVector.fromArray(["\ufdd0'*"], true), enfocus.core.en_content.call(null, cljs.core.name.call(null, category)));
-  enfocus.core.reset_ids.call(null, id_sym10163, pnod10164__$1);
-  return enfocus.core.remove_node_return_child.call(null, pnod10164__$1)
+  var id_sym3436 = cljs.core.nth.call(null, vec__3439, 0, null);
+  var pnod3437 = cljs.core.nth.call(null, vec__3439, 1, null);
+  var pnod3437__$1 = enfocus.core.create_hidden_dom.call(null, pnod3437);
+  enfocus.core.i_at.call(null, id_sym3436, pnod3437__$1, cljs.core.PersistentVector.fromArray(["\ufdd0'*"], true), enfocus.core.en_content.call(null, cljs.core.name.call(null, category)));
+  enfocus.core.reset_ids.call(null, id_sym3436, pnod3437__$1);
+  return enfocus.core.remove_node_return_child.call(null, pnod3437__$1)
 };
-if(cljs.core.deref.call(null, enfocus.core.tpl_cache).call(null, "resources/views/index.html") == null) {
-  var vec__10170_10175 = enfocus.core.replace_ids.call(null, '<!DOCTYPE html>\n\n<html>\n    <head>\n        <title>Bounder - Clojure Docs</title>\n        <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css" />\n        <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />\n    </head>\n    <body>\n\n        <div class="navbar navbar-inverse">\n            <div class="navbar-inner">\n                <span class="brand">\n                    Clojure/Script Documentation\n                </span>\n            </div>\n        </div>\n\n        <div class="container">\n\n            <div class="row">\n\n                <div class="span8">\n\n                    <div class="search">\n                        <input type="text"\n                               placeholder="Filter by name/category" />\n                    </div>\n\n                    <h2>Projects</h2>\n\n                    <ul class="projects">\n                        <li class="project">\n\n                            <h3>\n                                <a href="#">Project Name</a>\n                            </h3>\n\n                            <div class="description">\n                                Here is the description of the project. It could be quite long,\n                                but I don\'t know just how long.  Better just allow this to\n                                stretch vertically I suppose...\n                            </div>\n\n                            <ul class="categories">\n                                <li>Category</li>\n                            </ul>\n\n                            <ul class="versions">\n                                <li>\n                                    <a href="#">1.2.3</a>\n                                </li>\n                            </ul>\n\n                        </li>\n                    </ul>\n                </div>\n\n                <div class="span4">\n\n                    <h2>Categories</h2>\n\n                    <ul class="category-links">\n                        <li>Category</li>\n                    </ul>\n\n                </div>\n            </div>\n            \n        </div>\n\n        <script type="text/javascript" src="../../assets/js/main.js"><\/script>\n    </body>\n</html>\n');
-  var sym__3071__auto___10176 = cljs.core.nth.call(null, vec__10170_10175, 0, null);
-  var txt__3072__auto___10177 = cljs.core.nth.call(null, vec__10170_10175, 1, null);
-  cljs.core.swap_BANG_.call(null, enfocus.core.tpl_cache, cljs.core.assoc, "version-tplresources/views/index.html", cljs.core.PersistentVector.fromArray([sym__3071__auto___10176, txt__3072__auto___10177], true))
+if(cljs.core.deref.call(null, enfocus.core.tpl_cache).call(null, "src/html/index.html") == null) {
+  var vec__3443_3448 = enfocus.core.replace_ids.call(null, '<!DOCTYPE html>\n\n<html>\n    <head>\n        <title>Bounder - Clojure Docs</title>\n        <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css" />\n        <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />\n    </head>\n    <body>\n\n        <div class="navbar navbar-inverse">\n            <div class="navbar-inner">\n                <span class="brand">\n                    Clojure/Script Documentation\n                </span>\n                <ul class="nav nav-tabs pull-right">\n                    <li>\n                        <a href="https://github.com/rodnaph/bounder/">About</a>\n                    </li>\n                </ul>\n            </div>\n        </div>\n\n        <div class="container">\n\n            <div class="row">\n\n                <div class="span8">\n\n                    <div class="search">\n                        <input type="search"\n                               placeholder="Filter by name/category" />\n                    </div>\n\n                    <h2>Projects</h2>\n\n                    <div class="loader">\n                        Loading projects...\n                    </div>\n\n                    <ul class="projects">\n                        <li class="project">\n\n                            <h3>\n                                <a href="#">Project Name</a>\n                            </h3>\n\n                            <div class="description">\n                                Here is the description of the project. It could be quite long,\n                                but I don\'t know just how long.  Better just allow this to\n                                stretch vertically I suppose...\n                            </div>\n\n                            <ul class="categories">\n                                <li>Category</li>\n                            </ul>\n\n                            <ul class="versions">\n                                <li>\n                                    <a href="#">1.2.3</a>\n                                </li>\n                            </ul>\n\n                        </li>\n                    </ul>\n                </div>\n\n                <div class="span4">\n\n                    <h2>Categories</h2>\n\n                    <ul class="category-links">\n                        <li>Category</li>\n                    </ul>\n\n                </div>\n            </div>\n            \n        </div>\n\n        <script type="text/javascript" src="../../assets/js/main.js"><\/script>\n    </body>\n</html>\n');
+  var sym__3071__auto___3449 = cljs.core.nth.call(null, vec__3443_3448, 0, null);
+  var txt__3072__auto___3450 = cljs.core.nth.call(null, vec__3443_3448, 1, null);
+  cljs.core.swap_BANG_.call(null, enfocus.core.tpl_cache, cljs.core.assoc, "version-tplsrc/html/index.html", cljs.core.PersistentVector.fromArray([sym__3071__auto___3449, txt__3072__auto___3450], true))
 }else {
 }
 bounder.html.version_tpl = function version_tpl(project, version) {
-  var vec__10174 = function() {
-    return enfocus.core.get_cached_snippet.call(null, "version-tplresources/views/index.html", cljs.core.PersistentVector.fromArray(["\ufdd0'.versions", "\ufdd0'li"], true))
+  var vec__3447 = function() {
+    return enfocus.core.get_cached_snippet.call(null, "version-tplsrc/html/index.html", cljs.core.PersistentVector.fromArray(["\ufdd0'.versions", "\ufdd0'li"], true))
   }.call(null);
-  var id_sym10171 = cljs.core.nth.call(null, vec__10174, 0, null);
-  var pnod10172 = cljs.core.nth.call(null, vec__10174, 1, null);
-  var pnod10172__$1 = enfocus.core.create_hidden_dom.call(null, pnod10172);
-  enfocus.core.i_at.call(null, id_sym10171, pnod10172__$1, cljs.core.PersistentVector.fromArray(["\ufdd0'a"], true), enfocus.core.en_do__GT_.call(null, enfocus.core.en_content.call(null, version), enfocus.core.en_set_attr.call(null, "\ufdd0'href", bounder.html.version_url.call(null, project, version))));
-  enfocus.core.reset_ids.call(null, id_sym10171, pnod10172__$1);
-  return enfocus.core.remove_node_return_child.call(null, pnod10172__$1)
+  var id_sym3444 = cljs.core.nth.call(null, vec__3447, 0, null);
+  var pnod3445 = cljs.core.nth.call(null, vec__3447, 1, null);
+  var pnod3445__$1 = enfocus.core.create_hidden_dom.call(null, pnod3445);
+  enfocus.core.i_at.call(null, id_sym3444, pnod3445__$1, cljs.core.PersistentVector.fromArray(["\ufdd0'a"], true), enfocus.core.en_do__GT_.call(null, enfocus.core.en_content.call(null, version), enfocus.core.en_set_attr.call(null, "\ufdd0'href", bounder.html.version_url.call(null, project, version))));
+  enfocus.core.reset_ids.call(null, id_sym3444, pnod3445__$1);
+  return enfocus.core.remove_node_return_child.call(null, pnod3445__$1)
 };
-if(cljs.core.deref.call(null, enfocus.core.tpl_cache).call(null, "resources/views/index.html") == null) {
-  var vec__10178_10183 = enfocus.core.replace_ids.call(null, '<!DOCTYPE html>\n\n<html>\n    <head>\n        <title>Bounder - Clojure Docs</title>\n        <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css" />\n        <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />\n    </head>\n    <body>\n\n        <div class="navbar navbar-inverse">\n            <div class="navbar-inner">\n                <span class="brand">\n                    Clojure/Script Documentation\n                </span>\n            </div>\n        </div>\n\n        <div class="container">\n\n            <div class="row">\n\n                <div class="span8">\n\n                    <div class="search">\n                        <input type="text"\n                               placeholder="Filter by name/category" />\n                    </div>\n\n                    <h2>Projects</h2>\n\n                    <ul class="projects">\n                        <li class="project">\n\n                            <h3>\n                                <a href="#">Project Name</a>\n                            </h3>\n\n                            <div class="description">\n                                Here is the description of the project. It could be quite long,\n                                but I don\'t know just how long.  Better just allow this to\n                                stretch vertically I suppose...\n                            </div>\n\n                            <ul class="categories">\n                                <li>Category</li>\n                            </ul>\n\n                            <ul class="versions">\n                                <li>\n                                    <a href="#">1.2.3</a>\n                                </li>\n                            </ul>\n\n                        </li>\n                    </ul>\n                </div>\n\n                <div class="span4">\n\n                    <h2>Categories</h2>\n\n                    <ul class="category-links">\n                        <li>Category</li>\n                    </ul>\n\n                </div>\n            </div>\n            \n        </div>\n\n        <script type="text/javascript" src="../../assets/js/main.js"><\/script>\n    </body>\n</html>\n');
-  var sym__3071__auto___10184 = cljs.core.nth.call(null, vec__10178_10183, 0, null);
-  var txt__3072__auto___10185 = cljs.core.nth.call(null, vec__10178_10183, 1, null);
-  cljs.core.swap_BANG_.call(null, enfocus.core.tpl_cache, cljs.core.assoc, "project-tplresources/views/index.html", cljs.core.PersistentVector.fromArray([sym__3071__auto___10184, txt__3072__auto___10185], true))
+if(cljs.core.deref.call(null, enfocus.core.tpl_cache).call(null, "src/html/index.html") == null) {
+  var vec__3451_3456 = enfocus.core.replace_ids.call(null, '<!DOCTYPE html>\n\n<html>\n    <head>\n        <title>Bounder - Clojure Docs</title>\n        <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css" />\n        <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />\n    </head>\n    <body>\n\n        <div class="navbar navbar-inverse">\n            <div class="navbar-inner">\n                <span class="brand">\n                    Clojure/Script Documentation\n                </span>\n                <ul class="nav nav-tabs pull-right">\n                    <li>\n                        <a href="https://github.com/rodnaph/bounder/">About</a>\n                    </li>\n                </ul>\n            </div>\n        </div>\n\n        <div class="container">\n\n            <div class="row">\n\n                <div class="span8">\n\n                    <div class="search">\n                        <input type="search"\n                               placeholder="Filter by name/category" />\n                    </div>\n\n                    <h2>Projects</h2>\n\n                    <div class="loader">\n                        Loading projects...\n                    </div>\n\n                    <ul class="projects">\n                        <li class="project">\n\n                            <h3>\n                                <a href="#">Project Name</a>\n                            </h3>\n\n                            <div class="description">\n                                Here is the description of the project. It could be quite long,\n                                but I don\'t know just how long.  Better just allow this to\n                                stretch vertically I suppose...\n                            </div>\n\n                            <ul class="categories">\n                                <li>Category</li>\n                            </ul>\n\n                            <ul class="versions">\n                                <li>\n                                    <a href="#">1.2.3</a>\n                                </li>\n                            </ul>\n\n                        </li>\n                    </ul>\n                </div>\n\n                <div class="span4">\n\n                    <h2>Categories</h2>\n\n                    <ul class="category-links">\n                        <li>Category</li>\n                    </ul>\n\n                </div>\n            </div>\n            \n        </div>\n\n        <script type="text/javascript" src="../../assets/js/main.js"><\/script>\n    </body>\n</html>\n');
+  var sym__3071__auto___3457 = cljs.core.nth.call(null, vec__3451_3456, 0, null);
+  var txt__3072__auto___3458 = cljs.core.nth.call(null, vec__3451_3456, 1, null);
+  cljs.core.swap_BANG_.call(null, enfocus.core.tpl_cache, cljs.core.assoc, "project-tplsrc/html/index.html", cljs.core.PersistentVector.fromArray([sym__3071__auto___3457, txt__3072__auto___3458], true))
 }else {
 }
 bounder.html.project_tpl = function project_tpl(project) {
-  var vec__10182 = function() {
-    return enfocus.core.get_cached_snippet.call(null, "project-tplresources/views/index.html", cljs.core.PersistentVector.fromArray(["\ufdd0'.projects", "\ufdd0'>", "\ufdd0'li"], true))
+  var vec__3455 = function() {
+    return enfocus.core.get_cached_snippet.call(null, "project-tplsrc/html/index.html", cljs.core.PersistentVector.fromArray(["\ufdd0'.projects", "\ufdd0'>", "\ufdd0'li"], true))
   }.call(null);
-  var id_sym10179 = cljs.core.nth.call(null, vec__10182, 0, null);
-  var pnod10180 = cljs.core.nth.call(null, vec__10182, 1, null);
-  var pnod10180__$1 = enfocus.core.create_hidden_dom.call(null, pnod10180);
-  enfocus.core.i_at.call(null, id_sym10179, pnod10180__$1, cljs.core.PersistentVector.fromArray(["\ufdd0'h3", "\ufdd0'a"], true), enfocus.core.en_do__GT_.call(null, enfocus.core.en_content.call(null, (new cljs.core.Keyword("\ufdd0'name")).call(null, project)), enfocus.core.en_set_attr.call(null, "\ufdd0'href", (new cljs.core.Keyword("\ufdd0'url")).call(null, project))), cljs.core.PersistentVector.fromArray(["\ufdd0'.description"], true), enfocus.core.en_content.call(null, (new cljs.core.Keyword("\ufdd0'description")).call(null, 
+  var id_sym3452 = cljs.core.nth.call(null, vec__3455, 0, null);
+  var pnod3453 = cljs.core.nth.call(null, vec__3455, 1, null);
+  var pnod3453__$1 = enfocus.core.create_hidden_dom.call(null, pnod3453);
+  enfocus.core.i_at.call(null, id_sym3452, pnod3453__$1, cljs.core.PersistentVector.fromArray(["\ufdd0'h3", "\ufdd0'a"], true), enfocus.core.en_do__GT_.call(null, enfocus.core.en_content.call(null, (new cljs.core.Keyword("\ufdd0'name")).call(null, project)), enfocus.core.en_set_attr.call(null, "\ufdd0'href", (new cljs.core.Keyword("\ufdd0'url")).call(null, project))), cljs.core.PersistentVector.fromArray(["\ufdd0'.description"], true), enfocus.core.en_content.call(null, (new cljs.core.Keyword("\ufdd0'description")).call(null, 
   project)), cljs.core.PersistentVector.fromArray(["\ufdd0'.versions"], true), enfocus.core.en_content.call(null, cljs.core.map.call(null, cljs.core.partial.call(null, bounder.html.version_tpl, project), (new cljs.core.Keyword("\ufdd0'versions")).call(null, project))), cljs.core.PersistentVector.fromArray(["\ufdd0'.categories"], true), enfocus.core.en_content.call(null, cljs.core.map.call(null, bounder.html.category_tpl, (new cljs.core.Keyword("\ufdd0'categories")).call(null, project))));
-  enfocus.core.reset_ids.call(null, id_sym10179, pnod10180__$1);
-  return enfocus.core.remove_node_return_child.call(null, pnod10180__$1)
+  enfocus.core.reset_ids.call(null, id_sym3452, pnod3453__$1);
+  return enfocus.core.remove_node_return_child.call(null, pnod3453__$1)
 };
 bounder.html.loaded = function loaded() {
   return enfocus.core.at.call(null, document, cljs.core.PersistentVector.fromArray(["body"], true), enfocus.core.en_add_class.call(null, "loaded"))
@@ -32476,8 +32476,8 @@ cljs.reader.StringPushbackReader.prototype.cljs$reader$PushbackReader$read_char$
 };
 cljs.reader.StringPushbackReader.prototype.cljs$reader$PushbackReader$unread$arity$2 = function(reader, ch) {
   var self__ = this;
-  return cljs.core.swap_BANG_.call(null, self__.buffer_atom, function(p1__4398_SHARP_) {
-    return cljs.core.cons.call(null, ch, p1__4398_SHARP_)
+  return cljs.core.swap_BANG_.call(null, self__.buffer_atom, function(p1__4390_SHARP_) {
+    return cljs.core.cons.call(null, ch, p1__4390_SHARP_)
   })
 };
 cljs.reader.push_back_reader = function push_back_reader(s) {
@@ -32533,9 +32533,9 @@ cljs.reader.reader_error = function() {
     return reader_error__delegate.call(this, rdr, msg)
   };
   reader_error.cljs$lang$maxFixedArity = 1;
-  reader_error.cljs$lang$applyTo = function(arglist__4399) {
-    var rdr = cljs.core.first(arglist__4399);
-    var msg = cljs.core.rest(arglist__4399);
+  reader_error.cljs$lang$applyTo = function(arglist__4391) {
+    var rdr = cljs.core.first(arglist__4391);
+    var msg = cljs.core.rest(arglist__4391);
     return reader_error__delegate(rdr, msg)
   };
   reader_error.cljs$lang$arity$variadic = reader_error__delegate;
@@ -32579,13 +32579,13 @@ cljs.reader.read_token = function read_token(rdr, initch) {
       cljs.reader.unread.call(null, rdr, ch);
       return sb.toString()
     }else {
-      var G__4400 = function() {
+      var G__4392 = function() {
         sb.append(ch);
         return sb
       }();
-      var G__4401 = cljs.reader.read_char.call(null, rdr);
-      sb = G__4400;
-      ch = G__4401;
+      var G__4393 = cljs.reader.read_char.call(null, rdr);
+      sb = G__4392;
+      ch = G__4393;
       continue
     }
     break
@@ -32780,8 +32780,8 @@ cljs.reader.read_past = function read_past(pred, rdr) {
   var ch = cljs.reader.read_char.call(null, rdr);
   while(true) {
     if(cljs.core.truth_(pred.call(null, ch))) {
-      var G__4402 = cljs.reader.read_char.call(null, rdr);
-      ch = G__4402;
+      var G__4394 = cljs.reader.read_char.call(null, rdr);
+      ch = G__4394;
       continue
     }else {
       return ch
@@ -32804,14 +32804,14 @@ cljs.reader.read_delimited_list = function read_delimited_list(delim, rdr, recur
       if(cljs.core.truth_(temp__4090__auto__)) {
         var macrofn = temp__4090__auto__;
         var mret = macrofn.call(null, rdr, ch);
-        var G__4403 = mret === rdr ? a : cljs.core.conj_BANG_.call(null, a, mret);
-        a = G__4403;
+        var G__4395 = mret === rdr ? a : cljs.core.conj_BANG_.call(null, a, mret);
+        a = G__4395;
         continue
       }else {
         cljs.reader.unread.call(null, rdr, ch);
         var o = cljs.reader.read.call(null, rdr, true, null, recursive_QMARK_);
-        var G__4404 = o === rdr ? a : cljs.core.conj_BANG_.call(null, a, o);
-        a = G__4404;
+        var G__4396 = o === rdr ? a : cljs.core.conj_BANG_.call(null, a, o);
+        a = G__4396;
         continue
       }
     }
@@ -32880,13 +32880,13 @@ cljs.reader.read_number = function read_number(reader, initch) {
         return cljs.reader.reader_error.call(null, reader, "Invalid number format [", s, "]")
       }
     }else {
-      var G__4405 = function() {
+      var G__4397 = function() {
         buffer.append(ch);
         return buffer
       }();
-      var G__4406 = cljs.reader.read_char.call(null, reader);
-      buffer = G__4405;
-      ch = G__4406;
+      var G__4398 = cljs.reader.read_char.call(null, reader);
+      buffer = G__4397;
+      ch = G__4398;
       continue
     }
     break
@@ -32900,26 +32900,26 @@ cljs.reader.read_string_STAR_ = function read_string_STAR_(reader, _) {
       return cljs.reader.reader_error.call(null, reader, "EOF while reading")
     }else {
       if("\\" === ch) {
-        var G__4407 = function() {
+        var G__4399 = function() {
           buffer.append(cljs.reader.escape_char.call(null, buffer, reader));
           return buffer
         }();
-        var G__4408 = cljs.reader.read_char.call(null, reader);
-        buffer = G__4407;
-        ch = G__4408;
+        var G__4400 = cljs.reader.read_char.call(null, reader);
+        buffer = G__4399;
+        ch = G__4400;
         continue
       }else {
         if('"' === ch) {
           return buffer.toString()
         }else {
           if("\ufdd0'default") {
-            var G__4409 = function() {
+            var G__4401 = function() {
               buffer.append(ch);
               return buffer
             }();
-            var G__4410 = cljs.reader.read_char.call(null, reader);
-            buffer = G__4409;
-            ch = G__4410;
+            var G__4402 = cljs.reader.read_char.call(null, reader);
+            buffer = G__4401;
+            ch = G__4402;
             continue
           }else {
             return null
@@ -33036,26 +33036,26 @@ cljs.reader.read_meta = function read_meta(rdr, _) {
   }
   var o = cljs.reader.read.call(null, rdr, true, null, true);
   if(function() {
-    var G__4412 = o;
-    if(G__4412) {
+    var G__4404 = o;
+    if(G__4404) {
       if(function() {
-        var or__3943__auto__ = G__4412.cljs$lang$protocol_mask$partition0$ & 262144;
+        var or__3943__auto__ = G__4404.cljs$lang$protocol_mask$partition0$ & 262144;
         if(or__3943__auto__) {
           return or__3943__auto__
         }else {
-          return G__4412.cljs$core$IWithMeta$
+          return G__4404.cljs$core$IWithMeta$
         }
       }()) {
         return true
       }else {
-        if(!G__4412.cljs$lang$protocol_mask$partition0$) {
-          return cljs.core.type_satisfies_.call(null, cljs.core.IWithMeta, G__4412)
+        if(!G__4404.cljs$lang$protocol_mask$partition0$) {
+          return cljs.core.type_satisfies_.call(null, cljs.core.IWithMeta, G__4404)
         }else {
           return false
         }
       }
     }else {
-      return cljs.core.type_satisfies_.call(null, cljs.core.IWithMeta, G__4412)
+      return cljs.core.type_satisfies_.call(null, cljs.core.IWithMeta, G__4404)
     }
   }()) {
     return cljs.core.with_meta.call(null, o, cljs.core.merge.call(null, cljs.core.meta.call(null, o), m))
@@ -33186,39 +33186,39 @@ cljs.reader.read = function read(reader, eof_is_error, sentinel, is_recursive) {
       }
     }else {
       if(cljs.reader.whitespace_QMARK_.call(null, ch)) {
-        var G__4413 = reader;
-        var G__4414 = eof_is_error;
-        var G__4415 = sentinel;
-        var G__4416 = is_recursive;
-        reader = G__4413;
-        eof_is_error = G__4414;
-        sentinel = G__4415;
-        is_recursive = G__4416;
+        var G__4405 = reader;
+        var G__4406 = eof_is_error;
+        var G__4407 = sentinel;
+        var G__4408 = is_recursive;
+        reader = G__4405;
+        eof_is_error = G__4406;
+        sentinel = G__4407;
+        is_recursive = G__4408;
         continue
       }else {
         if(cljs.reader.comment_prefix_QMARK_.call(null, ch)) {
-          var G__4417 = cljs.reader.read_comment.call(null, reader, ch);
-          var G__4418 = eof_is_error;
-          var G__4419 = sentinel;
-          var G__4420 = is_recursive;
-          reader = G__4417;
-          eof_is_error = G__4418;
-          sentinel = G__4419;
-          is_recursive = G__4420;
+          var G__4409 = cljs.reader.read_comment.call(null, reader, ch);
+          var G__4410 = eof_is_error;
+          var G__4411 = sentinel;
+          var G__4412 = is_recursive;
+          reader = G__4409;
+          eof_is_error = G__4410;
+          sentinel = G__4411;
+          is_recursive = G__4412;
           continue
         }else {
           if("\ufdd0'else") {
             var f = cljs.reader.macros.call(null, ch);
             var res = cljs.core.truth_(f) ? f.call(null, reader, ch) : cljs.reader.number_literal_QMARK_.call(null, reader, ch) ? cljs.reader.read_number.call(null, reader, ch) : "\ufdd0'else" ? cljs.reader.read_symbol.call(null, reader, ch) : null;
             if(res === reader) {
-              var G__4421 = reader;
-              var G__4422 = eof_is_error;
-              var G__4423 = sentinel;
-              var G__4424 = is_recursive;
-              reader = G__4421;
-              eof_is_error = G__4422;
-              sentinel = G__4423;
-              is_recursive = G__4424;
+              var G__4413 = reader;
+              var G__4414 = eof_is_error;
+              var G__4415 = sentinel;
+              var G__4416 = is_recursive;
+              reader = G__4413;
+              eof_is_error = G__4414;
+              sentinel = G__4415;
+              is_recursive = G__4416;
               continue
             }else {
               return res
@@ -33247,8 +33247,8 @@ cljs.reader.zero_fill_right = function zero_fill_right(s, width) {
         var b = new goog.string.StringBuffer(s);
         while(true) {
           if(b.getLength() < width) {
-            var G__4425 = b.append("0");
-            b = G__4425;
+            var G__4417 = b.append("0");
+            b = G__4417;
             continue
           }else {
             return b.toString()
@@ -33306,47 +33306,47 @@ cljs.reader.parse_and_validate_timestamp = function() {
   return function(ts) {
     var temp__4092__auto__ = cljs.core.map.call(null, cljs.core.vec, cljs.core.split_at.call(null, 8, cljs.core.re_matches.call(null, timestamp, ts)));
     if(cljs.core.truth_(temp__4092__auto__)) {
-      var vec__4430 = temp__4092__auto__;
-      var vec__4431 = cljs.core.nth.call(null, vec__4430, 0, null);
-      var _ = cljs.core.nth.call(null, vec__4431, 0, null);
-      var years = cljs.core.nth.call(null, vec__4431, 1, null);
-      var months = cljs.core.nth.call(null, vec__4431, 2, null);
-      var days = cljs.core.nth.call(null, vec__4431, 3, null);
-      var hours = cljs.core.nth.call(null, vec__4431, 4, null);
-      var minutes = cljs.core.nth.call(null, vec__4431, 5, null);
-      var seconds = cljs.core.nth.call(null, vec__4431, 6, null);
-      var milliseconds = cljs.core.nth.call(null, vec__4431, 7, null);
-      var vec__4432 = cljs.core.nth.call(null, vec__4430, 1, null);
-      var ___$1 = cljs.core.nth.call(null, vec__4432, 0, null);
-      var ___$2 = cljs.core.nth.call(null, vec__4432, 1, null);
-      var ___$3 = cljs.core.nth.call(null, vec__4432, 2, null);
-      var V = vec__4430;
-      var vec__4433 = cljs.core.map.call(null, function(v) {
-        return cljs.core.map.call(null, function(p1__4429_SHARP_) {
-          return parseInt(p1__4429_SHARP_, 10)
+      var vec__4422 = temp__4092__auto__;
+      var vec__4423 = cljs.core.nth.call(null, vec__4422, 0, null);
+      var _ = cljs.core.nth.call(null, vec__4423, 0, null);
+      var years = cljs.core.nth.call(null, vec__4423, 1, null);
+      var months = cljs.core.nth.call(null, vec__4423, 2, null);
+      var days = cljs.core.nth.call(null, vec__4423, 3, null);
+      var hours = cljs.core.nth.call(null, vec__4423, 4, null);
+      var minutes = cljs.core.nth.call(null, vec__4423, 5, null);
+      var seconds = cljs.core.nth.call(null, vec__4423, 6, null);
+      var milliseconds = cljs.core.nth.call(null, vec__4423, 7, null);
+      var vec__4424 = cljs.core.nth.call(null, vec__4422, 1, null);
+      var ___$1 = cljs.core.nth.call(null, vec__4424, 0, null);
+      var ___$2 = cljs.core.nth.call(null, vec__4424, 1, null);
+      var ___$3 = cljs.core.nth.call(null, vec__4424, 2, null);
+      var V = vec__4422;
+      var vec__4425 = cljs.core.map.call(null, function(v) {
+        return cljs.core.map.call(null, function(p1__4421_SHARP_) {
+          return parseInt(p1__4421_SHARP_, 10)
         }, v)
-      }, cljs.core.map.call(null, function(p1__4427_SHARP_, p2__4426_SHARP_) {
-        return cljs.core.update_in.call(null, p2__4426_SHARP_, cljs.core.PersistentVector.fromArray([0], true), p1__4427_SHARP_)
-      }, cljs.core.PersistentVector.fromArray([cljs.core.constantly.call(null, null), function(p1__4428_SHARP_) {
-        if(cljs.core._EQ_.call(null, p1__4428_SHARP_, "-")) {
+      }, cljs.core.map.call(null, function(p1__4419_SHARP_, p2__4418_SHARP_) {
+        return cljs.core.update_in.call(null, p2__4418_SHARP_, cljs.core.PersistentVector.fromArray([0], true), p1__4419_SHARP_)
+      }, cljs.core.PersistentVector.fromArray([cljs.core.constantly.call(null, null), function(p1__4420_SHARP_) {
+        if(cljs.core._EQ_.call(null, p1__4420_SHARP_, "-")) {
           return"-1"
         }else {
           return"1"
         }
       }], true), V));
-      var vec__4434 = cljs.core.nth.call(null, vec__4433, 0, null);
-      var ___$4 = cljs.core.nth.call(null, vec__4434, 0, null);
-      var y = cljs.core.nth.call(null, vec__4434, 1, null);
-      var mo = cljs.core.nth.call(null, vec__4434, 2, null);
-      var d = cljs.core.nth.call(null, vec__4434, 3, null);
-      var h = cljs.core.nth.call(null, vec__4434, 4, null);
-      var m = cljs.core.nth.call(null, vec__4434, 5, null);
-      var s = cljs.core.nth.call(null, vec__4434, 6, null);
-      var ms = cljs.core.nth.call(null, vec__4434, 7, null);
-      var vec__4435 = cljs.core.nth.call(null, vec__4433, 1, null);
-      var offset_sign = cljs.core.nth.call(null, vec__4435, 0, null);
-      var offset_hours = cljs.core.nth.call(null, vec__4435, 1, null);
-      var offset_minutes = cljs.core.nth.call(null, vec__4435, 2, null);
+      var vec__4426 = cljs.core.nth.call(null, vec__4425, 0, null);
+      var ___$4 = cljs.core.nth.call(null, vec__4426, 0, null);
+      var y = cljs.core.nth.call(null, vec__4426, 1, null);
+      var mo = cljs.core.nth.call(null, vec__4426, 2, null);
+      var d = cljs.core.nth.call(null, vec__4426, 3, null);
+      var h = cljs.core.nth.call(null, vec__4426, 4, null);
+      var m = cljs.core.nth.call(null, vec__4426, 5, null);
+      var s = cljs.core.nth.call(null, vec__4426, 6, null);
+      var ms = cljs.core.nth.call(null, vec__4426, 7, null);
+      var vec__4427 = cljs.core.nth.call(null, vec__4425, 1, null);
+      var offset_sign = cljs.core.nth.call(null, vec__4427, 0, null);
+      var offset_hours = cljs.core.nth.call(null, vec__4427, 1, null);
+      var offset_minutes = cljs.core.nth.call(null, vec__4427, 2, null);
       var offset = offset_sign * (offset_hours * 60 + offset_minutes);
       return cljs.core.PersistentVector.fromArray([cljs.core.not.call(null, years) ? 1970 : y, cljs.core.not.call(null, months) ? 1 : check.call(null, 1, mo, 12, "timestamp month field must be in range 1..12"), cljs.core.not.call(null, days) ? 1 : check.call(null, 1, d, cljs.reader.days_in_month.call(null, mo, cljs.reader.leap_year_QMARK_.call(null, y)), "timestamp day field must be in range 1..last day in month"), cljs.core.not.call(null, hours) ? 0 : check.call(null, 0, h, 23, "timestamp hour field must be in range 0..23"), 
       cljs.core.not.call(null, minutes) ? 0 : check.call(null, 0, m, 59, "timestamp minute field must be in range 0..59"), cljs.core.not.call(null, seconds) ? 0 : check.call(null, 0, s, cljs.core._EQ_.call(null, m, 59) ? 60 : 59, "timestamp second field must be in range 0..60"), cljs.core.not.call(null, milliseconds) ? 0 : check.call(null, 0, ms, 999, "timestamp millisecond field must be in range 0..999"), offset], true)
@@ -33358,15 +33358,15 @@ cljs.reader.parse_and_validate_timestamp = function() {
 cljs.reader.parse_timestamp = function parse_timestamp(ts) {
   var temp__4090__auto__ = cljs.reader.parse_and_validate_timestamp.call(null, ts);
   if(cljs.core.truth_(temp__4090__auto__)) {
-    var vec__4437 = temp__4090__auto__;
-    var years = cljs.core.nth.call(null, vec__4437, 0, null);
-    var months = cljs.core.nth.call(null, vec__4437, 1, null);
-    var days = cljs.core.nth.call(null, vec__4437, 2, null);
-    var hours = cljs.core.nth.call(null, vec__4437, 3, null);
-    var minutes = cljs.core.nth.call(null, vec__4437, 4, null);
-    var seconds = cljs.core.nth.call(null, vec__4437, 5, null);
-    var ms = cljs.core.nth.call(null, vec__4437, 6, null);
-    var offset = cljs.core.nth.call(null, vec__4437, 7, null);
+    var vec__4429 = temp__4090__auto__;
+    var years = cljs.core.nth.call(null, vec__4429, 0, null);
+    var months = cljs.core.nth.call(null, vec__4429, 1, null);
+    var days = cljs.core.nth.call(null, vec__4429, 2, null);
+    var hours = cljs.core.nth.call(null, vec__4429, 3, null);
+    var minutes = cljs.core.nth.call(null, vec__4429, 4, null);
+    var seconds = cljs.core.nth.call(null, vec__4429, 5, null);
+    var ms = cljs.core.nth.call(null, vec__4429, 6, null);
+    var offset = cljs.core.nth.call(null, vec__4429, 7, null);
     return new Date(Date.UTC(years, months - 1, days, hours, minutes, seconds, ms) - offset * 60 * 1E3)
   }else {
     return cljs.reader.reader_error.call(null, null, [cljs.core.str("Unrecognized date/time syntax: "), cljs.core.str(ts)].join(""))

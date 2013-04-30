@@ -9,18 +9,18 @@
           version))
 
 (em/defsnippet category-tpl :compiled
-  "resources/views/index.html" [:.categories :li]
+  "src/html/index.html" [:.categories :li]
   [category]
   [:*] (em/content (name category)))
 
 (em/defsnippet version-tpl :compiled
-  "resources/views/index.html" [:.versions :li]
+  "src/html/index.html" [:.versions :li]
   [project version]
   [:a] (em/do-> (em/content version)
                 (em/set-attr :href (version-url project version))))
 
 (em/defsnippet project-tpl :compiled
-  "resources/views/index.html" [:.projects :> :li]
+  "src/html/index.html" [:.projects :> :li]
   [project]
   [:h3 :a] (em/do-> (em/content (:name project))
                           (em/set-attr :href (:url project)))
