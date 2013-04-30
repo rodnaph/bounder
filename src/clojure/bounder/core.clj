@@ -21,5 +21,6 @@
 
 (defn -main []
   (build-projects)
-  (build-html))
+  (build-html)
+  (shutdown-agents))
 
