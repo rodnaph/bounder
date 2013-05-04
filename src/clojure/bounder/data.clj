@@ -50,5 +50,9 @@
           {:categories [:templating]
            :versions ["master"]})
 
+  (github "weavejester/compojure"
+          {:categories [:web]
+           :versions ["1.1.5"]})
+
 ])
 
