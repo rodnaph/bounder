@@ -54,5 +54,9 @@
           {:categories [:web]
            :versions ["1.1.5"]})
 
+  (github "runa-dev/kits"
+          {:categories ["tools"]
+           :versions ["kits.1.5.1"]})
+
 ])
 
